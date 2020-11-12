@@ -1,0 +1,221 @@
+
+
+/*navbar*/
+
+.vendor_brand{
+    color:#FF656A !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav1 .navbar-light .navbar-nav .nav-link {
+    color:#fff;
+    text-decoration: none;
+    padding-left: 50px;
+    font-size: 14px;
+}
+
+
+.nav1 .bg-light  {
+    background-color: #002D5B !important;
+}
+
+.nav2 .navbar-light .navbar-nav .nav-link {
+    color:#002D5B;
+    text-decoration: none;
+    padding-left: 50px;
+    font-size: 14px;
+}
+
+.nav2 .bg-light  {
+    background-color: #fff !important;
+}
+
+.navbar-brand img{
+    width: 112px;
+    height:38px;
+
+}
+
+.navbar-expand-lg .navbar-nav    {
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,.nav2 .navbar-light .navbar-nav .nav-link:hover{
+    color:#FF656A;
+}
+
+.nav2 .navbar-light .navbar-nav .nav-link,.navbar-nav .active > .nav-link{
+    color:#002D5B;
+    padding-left:20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.navbar2-btn{
+    background-color: #FF656A;
+    color: #fff;
+    padding: 10px 38px;
+    font-size: 16px;
+    margin-top: -2px;
+    text-transform: uppercase;
+    border: none;
+    border-radius:6px;
+}
+.navbar2-btn:hover{
+    background-color: #FF656A;
+    color: #fff;
+    text-decoration: none;
+}
+.nav2 .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #002d5b;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.create_profile
+.title_page{
+    color:#002d5b;
+}
+.create_profile label{
+    font-size:18px;
+    color:#002d5b;
+}
+.create_profile .form-control.is-invalid{
+    border-color:#ced4da;
+    border-left:3px solid #FF656A;
+}
+.create_profile .border-input{
+    border-left:3px solid #FF656A;
+    padding:4px;
+}
+.create_profile .btn{
+    width:140px;
+}
+
+/************************/
+.my_profile_style{
+
+    min-height: 515px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color:rgba(0, 0, 0, 0.03);
+}
+.my_profile_style_image{
+    min-height: 300px;
+    max-height:400px;
+    background-color: #1b4b72;
+    padding:0px;
+}
+
+.my_profile_style_content{
+    min-height: 300px;
+    max-height:400px;
+    background-color: #fff;
+    border-bottom:2px solid #FF656A;
+}
+.my_profile_style_content h2{
+    padding:30px 30px 10px 30px;
+}
+.my_profile_style_content p{
+    line-height: 2.5;
+    padding: 10px 30px 30px 30px;
+}
+
+.my_profile_style_info {
+
+    min-height: 220px;
+    background-color: #fff;
+}
+.my_profile_style_info .info_child {
+    padding-top: 27px;
+    color: #1b4b72;
+}
+    .my_profile_style_info .info_child button{
+    background-color: #1b4b72;
+        border-color:#1b4b72;
+    }
+
+.my_profile_style_image
+.person_image{
+    width:100%;
+    height:100%;
+}
+
+
+/* add product vendor */
+.add_product_vendor_heading{
+    color:#FF656A;
+    padding-bottom: 20px;
+}
+.add_product_vendor label{
+   color:#1b4b72;
+    font-size:18px;
+}
+/* vendor profile */
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    transition: all 0.2s ease-in-out;
+}
+.rating {
+    font-size: 1.2rem;
+}
+.main-body {
+    padding: 10px;
+}
+
+.vendor-information .card {
+    border:none;
+    box-shadow: none;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.btn-delete {
+    border: 1px solid #012244;
+    color: #012244;
+}
+.btn-delete:hover {
+    background-color: rgb(207, 13, 13);
+    color: #ffffff;
+}
+
+.vendor-information , .text-dark-blue {
+    color: #012244;
+}
+.text-larg-fontawesome{
+    font-size: 1.5rem;
+}
+
+
+.vendor-statistic-i {
+    margin: -25px;
+    margin-top: 2px;
+    background-color: white;
+    padding: 5px;
+    font-size: 23px;
+}
+.edit {
+    background-color:#73879d;
+}
+/***************************************************/
+.bg_pink {
+    background-color: #ff656b;
+}
+/* end vendor profile */
