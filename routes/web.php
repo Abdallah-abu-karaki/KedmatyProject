@@ -28,8 +28,9 @@ use Illuminate\Support\Facades\Route;
     Route::get('/home_user','HomeController@home_user')->name('home_user');
 
 
+Route::get('/edit_profile','ProfileController@edit_profile')->name('edit_profile');
 
-    Route::get('/create_profile','ProfileController@create_profile')->name('create_profile');
+Route::get('/create_profile','ProfileController@create_profile')->name('create_profile');
     Route::get('/my_profile','ProfileController@my_profile_info')->name('my_profile');
     Route::get('/addition','VendorController@addition')->name('addition');
     Route::post('/create_profile_vendor','ProfileController@create_profile_vendor')->name('create_profile_vendor');

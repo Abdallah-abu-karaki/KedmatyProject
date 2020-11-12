@@ -3,6 +3,6 @@
 @section('content')
 
 
-   vendor page new
+    edit profile
 
 @endsection

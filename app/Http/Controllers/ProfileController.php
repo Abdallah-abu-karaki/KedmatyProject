@@ -53,4 +53,14 @@ class ProfileController extends Controller
       $profile->delete();
       return redirect()->route('home');
     }
+
+    public function edit_profile(){
+
+        $profile = User::with(['Profile'=>function($q){
+            $q->select('complete_profile','user_id');
+        }])->find(Auth::id());
+
+
+        return view('vendors.edit_profile',compact('profile'));
+    }
 }

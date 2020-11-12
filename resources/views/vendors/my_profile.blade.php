@@ -8,7 +8,7 @@
     <div class="container-fluid p-3 bg-light border-top ">
         <div class=" row justify-content-end">
             <a href="{{route('delete_profile',$info_profile->profile->id)}}" id="delete_profile_vendor" class="btn btn-danger bg_pink m-2">Delete Profile</a>
-            <a class="btn btn-primary text-white m-2 border-white edit">Edit Profile</a>
+            <a href="{{route('edit_profile')}}" class="btn btn-primary text-white m-2 border-white edit">Edit Profile</a>
         </div>
     </div>
     <div class="container-fluid mb-5 ">
