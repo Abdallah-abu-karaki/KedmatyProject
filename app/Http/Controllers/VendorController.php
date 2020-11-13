@@ -17,12 +17,17 @@ class VendorController extends Controller
      return view('vendors.addition',compact('profile'));
 }
 public function add_product(Request $request){
-     Item::create([
+    $file_extension = $request->image->getClientOriginalExtension();
+    $file_name = time().'.'.$file_extension;
+    $path = "images/vendorImage/addItemProductImage";
+    $request->image->move($path,$file_name);
+
+    Item::create([
         'description'=> $request->description,
         'name' => $request->name,
         'price' =>$request->price ,
         'count'=>$request->count,
-        'image' =>"abood",
+        'image' =>$file_name,
         'like'=>1,
         'dislike'=>2,
         'user_id'=>Auth::id(),

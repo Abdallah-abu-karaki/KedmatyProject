@@ -20,14 +20,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="921f4b23-3990-4be8-abe2-969f09a13595" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/vendorImage/profileImage/editProfile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/slick1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/slick2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/slick3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/slick5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/slick6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/slick7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/sta.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/sta1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/sta3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/adminSide.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VendorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VendorController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/vendor.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/vendor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/chevrons-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/logo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/logo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/s11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/s18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/s19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/vendorSide.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/vendorSide.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendors/edit_profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendors/edit_profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendors/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendors/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vendors/my_profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendors/my_profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +175,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/vendorImage/profileImage" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -168,17 +186,17 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Xammp\htdocs\kedmaty\public\images\vendorImage\profileImage" />
-      <recent name="D:\Xammp\htdocs\kedmaty\public\images\vendorImage\addItemProductImage" />
-      <recent name="D:\Xammp\htdocs\kedmaty\public\images\userSideImage" />
-      <recent name="D:\Xammp\htdocs\kedmaty\public\js" />
-      <recent name="D:\Xammp\htdocs\kedmaty\public\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Xammp\htdocs\kedmaty\public\images\userSideImage\home page img" />
       <recent name="D:\Xammp\htdocs\kedmaty\resources\views\auth" />
       <recent name="D:\Xammp\htdocs\kedmaty\resources\views\vendors" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Xammp\htdocs\kedmaty\public\images\vendorImage\homeVendorImage" />
+      <recent name="D:\Xammp\htdocs\kedmaty\public\images\vendorImage\profileImage" />
+      <recent name="D:\Xammp\htdocs\kedmaty\public\images\vendorImage\addItemProductImage" />
+      <recent name="D:\Xammp\htdocs\kedmaty\public\images\userSideImage" />
+      <recent name="D:\Xammp\htdocs\kedmaty\public\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -264,7 +282,16 @@
       <workItem from="1605187789631" duration="1785000" />
       <workItem from="1605189602296" duration="1491000" />
       <workItem from="1605192364993" duration="1332000" />
-      <workItem from="1605279157650" duration="681000" />
+      <workItem from="1605279157650" duration="1622000" />
+      <workItem from="1605282083836" duration="1131000" />
+      <workItem from="1605286664462" duration="593000" />
+      <workItem from="1605298531566" duration="1867000" />
+      <workItem from="1605300456076" duration="1784000" />
+      <workItem from="1605302328007" duration="1723000" />
+      <workItem from="1605304606270" duration="1971000" />
+      <workItem from="1605306670396" duration="1733000" />
+      <workItem from="1605308542221" duration="1139000" />
+      <workItem from="1605310344812" duration="306000" />
     </task>
     <servers />
   </component>
@@ -300,9 +327,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="480" y="87" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1603458433974" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1604268738587">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1605306891506">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1604268738587" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1605306891506" />
   </component>
 </project>

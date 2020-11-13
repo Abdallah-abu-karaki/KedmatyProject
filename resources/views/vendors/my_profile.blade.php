@@ -2,12 +2,21 @@
 
 @section('content')
 
-
+    <div class="overlay">
+        <div class="content">
+            <span class="close_alert_delete_profile close">+</span>
+            <div class="inner-data">
+                <i class="fas fa-question-circle fa-5x question_delete_icon"></i>
+                <h4 class="mt-3 mb-3">you want delete acount ? </h4>
+                <a href="{{route('delete_profile',$info_profile->profile->id)}}" id="delete_profile_vendor" class="btn  bg_pink  m-2">Delete Profile  <i class="fas fa-trash-alt"></i></a>
+            </div>
+        </div>
+    </div>
 
     <!--vendor profile-->
     <div class="container-fluid p-3 bg-light border-top ">
         <div class=" row justify-content-end">
-            <a href="{{route('delete_profile',$info_profile->profile->id)}}" id="delete_profile_vendor" class="btn btn-danger bg_pink m-2">Delete Profile</a>
+            <button class="btn btn-danger btn-md delete delete_profile">Delete</button>
             <a href="{{route('edit_profile',$info_profile->profile->id)}}" class="btn btn-primary text-white m-2 border-white edit">Edit Profile</a>
         </div>
     </div>
@@ -19,7 +28,7 @@
                     <div class="card bg-light">
                         <div class="card-body">
                             <div class="d-flex flex-column align-items-center text-center">
-                                <img src="{{asset('images/vendorImage/profileUserImage/'.$info_profile->profile->image)}}" alt="Admin" class="rounded-lg" width="200">
+                                <img src="{{asset('images/vendorImage/profileUserImage/'.$info_profile->profile->image)}}" alt="Admin" class="rounded-lg" width="200" height="270">
                                 <div class="mt-3">
                                     <!--https://qatar.library.georgetown.edu/sites/default/files/tatiana-usova.jpg-->
                                    <!-- -->
@@ -53,11 +62,11 @@
                             <p class="">
                                 {{$info_profile->profile->description}}
                             </p>
-                            <h3 class="text-capitalize text-dark-blue mb-3">Some of my products</h3>
+
                             <div class="my-2">
-                                <img class="col-3 p-1 h-100" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20190503-delish-pineapple-baked-salmon-horizontal-ehg-450-1557771120.jpg?crop=0.669xw:1.00xh;0.173xw,0&resize=640:*" alt="project-pic">
-                                <img class="col-3 p-1 h-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTncmFEzIYR1cv7pGaDhncvJpT03VWMuNzXrA&usqp=CAU" alt="project-pic">
-                                <img class="col-3 p-1 h-100" src="https://cherylannmollan.files.wordpress.com/2014/03/ricettesenzaglutine-info.jpg" alt="project-pic">
+                                <img class="col-3 p-1 h-100" src="{{asset('images/vendorImage/profileImage/profileShow1.jpg')}}" alt="project-pic" style="border-radius:8px">
+                                <img class="col-3 p-1 h-100" src="{{asset('images/vendorImage/profileImage/profileShow2.jpg')}}" alt="project-pic" style="border-radius:8px">
+                                <img class="col-3 p-1 h-100" src="{{asset('images/vendorImage/profileImage/profileShow3.jpg')}}" alt="project-pic" style="border-radius:8px">
                             </div>
                         </div>
                     </div>

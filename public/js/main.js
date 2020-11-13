@@ -1,9 +1,15 @@
 $(document).ready(function(){
 
 
-    $('#delete_profile_vendor').on('click',function(){
-        prompt("you want really delete profile ? ");
+
+    $('.delete').click(function(){
+        $('.overlay').css('display','flex');
+        $('body').css('overflow-y','hidden');
     });
 
 
+    $('.close').click(function(){
+        $('.overlay').css('display','none');
+        $('body').css('overflow-y','auto');
+    });
 });

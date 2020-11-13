@@ -54,6 +54,12 @@ return [
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
+        'addItemProductImage' => [
+            'driver' => 'local',
+            'root' => base_path('app/public/images/vendorImage/addItemProductImage'),
+            'url' => env('APP_URL').'/public',
+            'visibility' => 'public',
+        ],
 
         'profileUserImage' => [
             'driver' => 'local',
