@@ -55,6 +55,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'profileUserImage' => [
+            'driver' => 'local',
+            'root' => base_path('app/public/images/vendorImage/profileUserImage'),
+            'url' => env('APP_URL').'/public',
+            'visibility' => 'public',
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

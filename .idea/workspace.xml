@@ -20,9 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="921f4b23-3990-4be8-abe2-969f09a13595" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/vendors/edit_profile.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/vendorImage/profileImage/editProfile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendors/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendors/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/vendorSide.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/vendorSide.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendors/edit_profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendors/edit_profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/vendors/my_profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendors/my_profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -154,7 +157,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../university-Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/vendorImage/profileImage" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -165,17 +168,17 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Xammp\htdocs\kedmaty\public\images\vendorImage\profileImage" />
+      <recent name="D:\Xammp\htdocs\kedmaty\public\images\vendorImage\addItemProductImage" />
+      <recent name="D:\Xammp\htdocs\kedmaty\public\images\userSideImage" />
+      <recent name="D:\Xammp\htdocs\kedmaty\public\js" />
+      <recent name="D:\Xammp\htdocs\kedmaty\public\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Xammp\htdocs\kedmaty\public\images\userSideImage\home page img" />
       <recent name="D:\Xammp\htdocs\kedmaty\resources\views\auth" />
       <recent name="D:\Xammp\htdocs\kedmaty\resources\views\vendors" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Xammp\htdocs\kedmaty\public\images\vendorImage\addItemProductImage" />
-      <recent name="D:\Xammp\htdocs\kedmaty\public\images\userSideImage" />
-      <recent name="D:\Xammp\htdocs\kedmaty\public\images\vendorImage\profileImage" />
-      <recent name="D:\Xammp\htdocs\kedmaty\public\js" />
-      <recent name="D:\Xammp\htdocs\kedmaty\public\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -256,7 +259,12 @@
       <workItem from="1605178251773" duration="930000" />
       <workItem from="1605179249436" duration="458000" />
       <workItem from="1605179841665" duration="8000" />
-      <workItem from="1605183760260" duration="314000" />
+      <workItem from="1605183760260" duration="1778000" />
+      <workItem from="1605185571365" duration="1557000" />
+      <workItem from="1605187789631" duration="1785000" />
+      <workItem from="1605189602296" duration="1491000" />
+      <workItem from="1605192364993" duration="1332000" />
+      <workItem from="1605279157650" duration="681000" />
     </task>
     <servers />
   </component>

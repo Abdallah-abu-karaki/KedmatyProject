@@ -8,7 +8,7 @@
     <div class="container-fluid p-3 bg-light border-top ">
         <div class=" row justify-content-end">
             <a href="{{route('delete_profile',$info_profile->profile->id)}}" id="delete_profile_vendor" class="btn btn-danger bg_pink m-2">Delete Profile</a>
-            <a href="{{route('edit_profile')}}" class="btn btn-primary text-white m-2 border-white edit">Edit Profile</a>
+            <a href="{{route('edit_profile',$info_profile->profile->id)}}" class="btn btn-primary text-white m-2 border-white edit">Edit Profile</a>
         </div>
     </div>
     <div class="container-fluid mb-5 ">
@@ -19,9 +19,11 @@
                     <div class="card bg-light">
                         <div class="card-body">
                             <div class="d-flex flex-column align-items-center text-center">
-                                <img src="https://qatar.library.georgetown.edu/sites/default/files/tatiana-usova.jpg" alt="Admin" class="rounded-lg" width="200">
+                                <img src="{{asset('images/vendorImage/profileUserImage/'.$info_profile->profile->image)}}" alt="Admin" class="rounded-lg" width="200">
                                 <div class="mt-3">
-                                    <h4 class="text-capitalize text-dark-blue">vendor name</h4>
+                                    <!--https://qatar.library.georgetown.edu/sites/default/files/tatiana-usova.jpg-->
+                                   <!-- -->
+                                    <h4 class="text-capitalize text-dark-blue">{{$info_profile->name}}</h4>
                                     <p class="text-secondary mb-1 text-capitalize mt-3">indivedual</p>
                                     <div class="rating text-warning"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> <i class="far fa-star"></i></div>
                                     <p class="text-muted font-size-sm p-2 border-right border-left mt-3">Bio</p>
@@ -47,11 +49,11 @@
                     <!--project info-->
                     <div class="row my-3">
                         <div class="card p-4">
-                            <h3 class="text-capitalize text-dark-blue mb-3">project name</h3>
-                            <p class="">(project' brife describtion)project' brife describtionproject' brife describtionproject' brife describtion
-                                project' brife describtionproject' brife describtionproject' brife describtionproject' brife describtionproject' brife describtion
-                                project' brife describtionproject' brife describtionproject' brife describtionproject' brife describtion
+                            <h3 class="text-capitalize text-dark-blue mb-3">My project</h3>
+                            <p class="">
+                                {{$info_profile->profile->description}}
                             </p>
+                            <h3 class="text-capitalize text-dark-blue mb-3">Some of my products</h3>
                             <div class="my-2">
                                 <img class="col-3 p-1 h-100" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20190503-delish-pineapple-baked-salmon-horizontal-ehg-450-1557771120.jpg?crop=0.669xw:1.00xh;0.173xw,0&resize=640:*" alt="project-pic">
                                 <img class="col-3 p-1 h-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTncmFEzIYR1cv7pGaDhncvJpT03VWMuNzXrA&usqp=CAU" alt="project-pic">
