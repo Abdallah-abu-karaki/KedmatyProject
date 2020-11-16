@@ -21,28 +21,28 @@
 
                     <div class="form-group">
                         <label>Name product :</label>
-                        <input type="text" name="name" class="form-control border-input @error('name') is-invalid @enderror"/>
+                        <input type="text" name="name"  value="{{old('name')}}" class="form-control border-input @error('name') is-invalid @enderror"/>
                     </div>
                     @error('name')
                     <div class="alert alert-danger">{{$message}}</div>
                     @enderror
                     <div class="form-group">
                         <label>Price product:</label>
-                        <input type="number" name="price" class="form-control border-input @error('price') is-invalid @enderror"/>
+                        <input type="number" name="price" value="{{old('price')}}" class="form-control border-input @error('price') is-invalid @enderror"/>
                     </div>
                     @error('price')
                     <div class="alert alert-danger">{{$message}}</div>
                     @enderror
                     <div class="form-group">
                         <label>Quantity of the product:</label>
-                        <input type="number" name="count" class="form-control border-input @error('count') is-invalid @enderror"/>
+                        <input type="text" name="count" value="{{old('count')}}" class="form-control border-input @error('count') is-invalid @enderror"/>
                     </div>
                     @error('count')
                     <div class="alert alert-danger">{{$message}}</div>
                     @enderror
                     <div class="form-group">
                         <label> Image Product : </label>
-                        <input type="file" name="image" class="form-control border-input @error('image') is-invalid @enderror"/>
+                        <input type="file" name="image" value="{{old('image')}}" class="form-control border-input @error('image') is-invalid @enderror"/>
                     </div>
                     @error('image')
                     <div class="alert alert-danger">{{$message}}</div>

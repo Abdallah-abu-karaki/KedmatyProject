@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Item;
 use App\Profile;
 use App\User;
 use Illuminate\Http\Request;
@@ -34,7 +35,16 @@ class HomeController extends Controller
                 $q->select('complete_profile','user_id');
             }])->find(Auth::id());
 
-            return view('vendors.index',compact('profile'));
+            $item = Item::where('user_id',Auth::id())->paginate(4);
+            $number_item_add = Item::where('user_id',Auth::id())->count();
+            $number_item_out_of_stock = 0;
+            foreach($item as $item_finish){
+                if($item_finish->count == 0){
+                    $number_item_out_of_stock +=1;
+                }
+            }
+
+            return view('vendors.index',compact(['profile','item','number_item_add','number_item_out_of_stock']));
         }
 
 

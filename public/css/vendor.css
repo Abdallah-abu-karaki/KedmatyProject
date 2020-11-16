@@ -243,6 +243,12 @@ html {
     width: 72px;
 
 }
+.item .card-btn-update{
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+}
+
 
 .pr-name {
     margin-bottom: .75rem;
@@ -255,14 +261,25 @@ html {
 
 .n-cheched ,.card-price,.card-btn-delete{
     color: hsl(11deg 86% 42%);
+
 }
+.card-btn-delete-item{
+    position: absolute;
+    left: 105px;
+    bottom: 35px;
+}
+
 
 .main-card{
     margin-bottom: 36px !important;
+    min-height: 575px;
 }
 
 .card-price{
     color: hsl(39deg 100% 50%);
+    position: absolute;
+    bottom: 90px;
+    margin-top:10px;
 }
 .card .colors{
     display: flex;
@@ -367,11 +384,10 @@ body{
     height: 37px;
     margin-top: 9px;
 }
-.inner-data .bg_pink{
+ .inner-data .bg_pink{
     color:#fff;
 }
 
-.content .inner-data .question_delete_icon , h4{
+ .content .inner-data .question_delete_icon , h4{
     color:#012244;
 }
-

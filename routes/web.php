@@ -39,7 +39,7 @@ use Illuminate\Support\Facades\Route;
 
 
     Route::post('/edit_profile/update/{id}','ProfileController@update_profile')->name('update_profile');
-
+    Route::get('/deleteItem/{id}','VendorController@deleteItem')->name('deleteItem');
 
 
 
