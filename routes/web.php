@@ -41,6 +41,14 @@ use Illuminate\Support\Facades\Route;
     Route::post('/edit_profile/update/{id}','ProfileController@update_profile')->name('update_profile');
     Route::get('/deleteItem/{id}','VendorController@deleteItem')->name('deleteItem');
 
+############################################# Admain Routes ################################################
 
+Route::get('/manage_admain','admainController@manage_admain')->name('manage_admain');
+Route::get('/add_admain','admainController@add_admain')->name('add_admain');
+Route::post('/insert_admain','admainController@insert_admain')->name('insert_admain');
+Route::get('/delete_admain/{id}','admainController@delete_admain')->name('delete_admain');
+Route::get('/edit_admain/{id}','admainController@edit_admain')->name('edit_admain');
+Route::post('/update_admain/{id}','admainController@update_admain')->name('update_admain');
+########################################## End Admain Routes ###############################################
 
 

@@ -1,0 +1,76 @@
+.navbar-light  .admain-brand{
+    color:#002d5b;
+}
+
+.contact-me{
+    background: url(images/admainSideImage/side4.jpg) no-repeat fixed center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+.contact-me .filed{
+
+    background-color:rgba(0,45,91,0.3);
+    min-height:515px;
+    padding-top:50px;
+    padding-bottom:50px;
+    color:#fff;
+
+}
+.contact-me .filed p{
+    margin-bottom:30px;
+}
+.contact-me .filed textarea.form-control{
+    height:113px;
+}
+.contact-me .filed .btn-block{
+    height:48px;
+}
+.contact-me input[type="text"],
+.contact-me  input[type="password"]{
+    background-color: rgba(0,45,91,0.6);
+    color:#fff;
+    border: none;
+}
+.manage_admain{
+    background:url(images/admainSideImage/bac2.jpg) no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    min-height: 515px;
+
+}
+.manage_admain .data{
+    padding-top:39px;
+    padding-bottom:40px;
+    background-color:rgba(0,45,91,0.3);
+    color:#fff;
+    min-height: 515px;
+
+
+}
+.manage_admain .data .table thead th{
+    background-color:rgb(0,45,91) ;
+    border:1px solid rgb(0,45,91);
+}
+.manage_admain .data .table-striped tbody tr:nth-of-type(odd){
+    background-color: #fff;
+    color:rgb(0,45,91);
+}
+.manage_admain .data .table-striped tbody tr:nth-of-type(even)
+{
+    background-color: #fff;
+    color:rgb(0,45,91);
+}
+.manage_admain .data .btn-darkblue{
+    color: #fff;
+    background-color: rgb(0,45,91);
+    border-color: rgb(0,45,91);
+    box-shadow: none;
+}
+.pag .pagination{
+    margin: -38px 480px;
+}
+

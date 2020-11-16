@@ -21,11 +21,12 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/all.min.css')}}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{{asset('css/adminlte.min.css')}}">
 
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/admain.css')}}">
 
 
 </head>
@@ -36,9 +37,9 @@
 
     <div class="nav1">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-light1">
+        <nav class="navbar navbar-expand navbar-light bg-light bg-light1 navbar-fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="images/logo4.png"></a>
+                <a class="navbar-brand" href="#"><img src="{{asset('images/logo4.png')}}"></a>
                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -79,10 +80,43 @@
             </div>
         </nav>
     </div>
-    <main>
+    <div class="nav2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+            <div class="container">
+            <a class="admain-brand"><i class="fas fa-tachometer-alt mr-3"></i> Admain Dashbord</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('manage_admain')}}">Manage Admain</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Manage Vendor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Manage Item</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div>
+    </div>
+   <main>
         @yield('content')
     </main>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- jQuery -->
+<script src="{{asset('js/jquery.min.js')}}"></script>
+<!-- Bootstrap 4 -->
+
+<!-- AdminLTE App -->
+<script src="{{asset('js/adminlte.min.js')}}"></script>
 </body>
 </html>
