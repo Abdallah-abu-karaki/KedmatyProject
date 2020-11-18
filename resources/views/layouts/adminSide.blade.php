@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
 
     <link rel="stylesheet" href="{{asset('css/all.min.css')}}">
     <!-- Theme style -->
@@ -90,16 +91,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link"  href="{{route('home')}}">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('manage_admain')}}">Manage Admain</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Manage Vendor</a>
+                        <a class="nav-link" href="{{route('manage_vendor')}}">Manage Vendor</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Manage Item</a>
+                        <a class="nav-link" href="{{route('manage_item')}}">Manage Item</a>
                     </li>
                 </ul>
             </div>
@@ -112,6 +113,8 @@
     </main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<scrip src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></scrip>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- jQuery -->
 <script src="{{asset('js/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->

@@ -41,14 +41,21 @@ use Illuminate\Support\Facades\Route;
     Route::post('/edit_profile/update/{id}','ProfileController@update_profile')->name('update_profile');
     Route::get('/deleteItem/{id}','VendorController@deleteItem')->name('deleteItem');
 
-############################################# Admain Routes ################################################
-
+###########################################Start Manage Admain Routes #####################################
 Route::get('/manage_admain','admainController@manage_admain')->name('manage_admain');
 Route::get('/add_admain','admainController@add_admain')->name('add_admain');
 Route::post('/insert_admain','admainController@insert_admain')->name('insert_admain');
 Route::get('/delete_admain/{id}','admainController@delete_admain')->name('delete_admain');
 Route::get('/edit_admain/{id}','admainController@edit_admain')->name('edit_admain');
 Route::post('/update_admain/{id}','admainController@update_admain')->name('update_admain');
-########################################## End Admain Routes ###############################################
+########################################## End Manage Admain Routes ########################################
 
+######################################### Start Manage vendor Routes #######################################
+Route::get('/manage_vendor','admainController@manage_vendor')->name('manage_vendor');
+Route::get('/delete_vendor/{id}','admainController@delete_vendor')->name('delete_vendor');
+########################################## End Manage vendor Routes ########################################
 
+######################################### Start Manage Item Route ##########################################
+Route::get('/manage_item','admainController@manage_item')->name('manage_item');
+Route::get('/show_item_vendor/{id}','admainController@show_item_vendor')->name('show_item_vendor');
+######################################### End Manage Item Route ############################################

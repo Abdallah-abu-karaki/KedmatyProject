@@ -1,8 +1,6 @@
 @extends('layouts.adminSide')
 
 @section('content')
-
-
     <!--section stat-->
     <section class="manage_admain text-center">
         <div class="data">
