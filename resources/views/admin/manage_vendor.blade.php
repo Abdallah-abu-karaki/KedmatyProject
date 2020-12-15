@@ -14,9 +14,9 @@
                     </div>
                     <div class="right-side-vendor-box">
                         <h5><i class="fas fa-user"></i> {{$v->name}}</h5>
-                        <span><i class="fas fa-paper-plane"></i> {{$v->email}}</span>
-                        <span><i class="fas fa-phone"></i> {{$v->profile->number}}</span>
-                        <span><i class="fas fa-map-marker-alt"></i> {{$v->profile->location}}</span>
+                         <span class="span_manage_vendor"><i class="fas fa-paper-plane"></i> {{$v->email}}</span>
+                        <span class="span_manage_vendor"><i class="fas fa-phone"></i> {{$v->profile->number}}</span>
+                        <span class="span_manage_vendor"><i class="fas fa-map-marker-alt"></i> {{$v->profile->location}}</span>
                         <a href="{{route('delete_vendor',$v->id)}}"><i class="fas fa-trash-alt fa-2x"></i></a>
                     </div>
                 </div>

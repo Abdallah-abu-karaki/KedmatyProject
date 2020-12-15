@@ -12,17 +12,16 @@
 
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">-->
 
-    <link rel="stylesheet" href="{{asset('css/all.min.css')}}">
+   <!-- <link rel="stylesheet" href="{{asset('css/all.min.css')}}">-->
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset('css/adminlte.min.css')}}">
 
@@ -113,13 +112,13 @@
     </main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<scrip src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></scrip>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- jQuery -->
 <script src="{{asset('js/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->
 
 <!-- AdminLTE App -->
+
 <script src="{{asset('js/adminlte.min.js')}}"></script>
+@include('sweetalert::alert')
 </body>
 </html>
