@@ -1,3 +1,4 @@
+
 @extends('layouts.vendorSide')
 
 @section('content')
@@ -55,7 +56,7 @@
 
                         <span class="card-price">{{$i->price}} jd</span>
                         <br />
-                        <button type="button" class="card-btn-update">Update</button>
+                        <button type="button" class="card-btn-update"><a href="{{route('edit_item',$i->id)}}">Update</a></button>
                         <a href="{{route('deleteItem',$i->id)}}" class="btn btn-danger card-btn-delete-item">Delete</a>
                     </div>
                 </div>
@@ -63,7 +64,8 @@
 
 
     @endforeach
+
     <div class="item-paginate">
-{!! $item->links() !!}
+      {!! $item->links() !!}
     </div>
 @endsection

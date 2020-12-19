@@ -18,7 +18,7 @@
                 <tbody>
                 @foreach($items as $item)
                 <tr class="row_data_vendor_and_item">
-                    <td style="width: 200px;"><img src="{{asset('images/vendorImage/profileUserImage/'.$item->profile->image)}}" width="150px"/></td>
+                   <td style="width: 200px;"><img src="{{asset('images/vendorImage/profileUserImage/'.$item->profile->image)}}" width="150px"/></td>
                     <td>{{$item->name}}</td>
                     <td>{{$item->email}}</td>
                     <td><a href="{{route('show_item_vendor',$item->id)}}" class="show-item"><i class="fas fa-eye"></i>show items</a></td>

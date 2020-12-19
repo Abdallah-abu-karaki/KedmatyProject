@@ -22,7 +22,7 @@
                     <tr class="row_data_vendor_and_item">
                         <td style="width: 200px;"><img src="{{asset('images/vendorImage/addItemProductImage/'.$item->image)}}" width="150px"/></td>
                         <td>{{$item->name}}</td>
-                        <td><a href="{{route('show_item_vendor',$item->id)}}" class="show-item"><i class="fas fa-trash-alt"></i>delete item</a></td>
+                        <td><a href="{{route('delete_item',$item->id)}}" class="show-item"><i class="fas fa-trash-alt"></i>delete item</a></td>
                     </tr>
                 @endforeach
                 </tbody>

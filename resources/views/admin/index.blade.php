@@ -17,11 +17,11 @@
                                 <i class="fa fa-user text-white" style="font-size:24px"></i>
                             </div>
                             <div class="media-body p-2">
-                                <h4> Users </h4>
-                                <span class="text-muted">Total Users</span>
+                                <h4> Vendors </h4>
+                                <span class="text-muted">Total Vendors</span>
                             </div>
                             <div class="media-right p-2 media-middle">
-                                <h1 class="primary">1,22,356</h1>
+                                <h1 class="primary">{{$number_vendors}}</h1>
                             </div>
                         </div>
                     </div>
@@ -32,14 +32,14 @@
                     <div class="card-content">
                         <div class="media align-items-stretch">
                             <div class="bg_pink p-2 media-middle">
-                                <i class="fa fa-edit text-white" style="font-size:24px"></i>
+                                <i class="far fa-clipboard text-white" style="font-size:24px"></i>
                             </div>
                             <div class="media-body p-2">
-                                <h4>Posts</h4>
-                                <span  class="text-muted">Total Users Posts</span>
+                                <h4>Advertising</h4>
+                                <span  class="text-muted">Total Advertising</span>
                             </div>
                             <div class="media-right p-2 media-middle">
-                                <h1 class="primary">18,000</h1>
+                                <h1 class="primary">{{$number_item}}</h1>
                             </div>
                         </div>
                     </div>
@@ -50,14 +50,14 @@
                     <div class="card-content">
                         <div class="media align-items-stretch">
                             <div class="bg_pink p-2 media-middle">
-                                <i class="fa fa-bell text-white" style="font-size:24px"></i>
+                               <i class="fas fa-shopping-bag text-white" style="font-size:24px"></i>
                             </div>
                             <div class="media-body p-2">
-                                <h4>Follows </h4>
-                                <span  class="text-muted">Total Subscribers</span>
+                                <h4>Items</h4>
+                                <span  class="text-muted">Total Items</span>
                             </div>
                             <div class="media-right p-2 media-middle">
-                                <h1 class="primary">90,754</h1>
+                                <h1 class="primary">{{$number_item}}</h1>
                             </div>
                         </div>
                     </div>
@@ -68,14 +68,14 @@
                     <div class="card-content">
                         <div class="media align-items-stretch">
                             <div class="bg-dark-blue p-2 media-middle">
-                                <i class="fa fa-shopping-bag text-white" style="font-size:24px"></i>
+                               <i class="fas fa-user-tie text-white" style="font-size:24px"></i>
                             </div>
                             <div class="media-body p-2">
-                                <h4>Sales </h4>
-                                <span  class="text-muted">Total Sales</span>
+                                <h4>Admains</h4>
+                                <span  class="text-muted">Total admain</span>
                             </div>
                             <div class="media-right p-2 media-middle">
-                                <h1 class="primary">100,745</h1>
+                                <h1 class="primary">{{$number_admain}}</h1>
                             </div>
                         </div>
                     </div>
@@ -86,7 +86,7 @@
     <!-- /. statistics -->
 
     <!-- edit slider -->
-
+<!--
     <div class="container-fluid bg-light">
         <div class="container  my-5 px-5 pb-3 rounded">
             <div class="row rounded-bottom ">
@@ -139,74 +139,34 @@
             </script>
 
         </div>
-    </div>
+    </div>-->
     <!-- /. edit slider -->
 
 
     <div class="container-fluid my-3 p-3">
         <!-- resent admins -->
         <div class="row mb-2">
-            <h3 class="col-12 text-capitalize text-center mt-4 text-dark-blue custom-display-medium">recent joined admins(<a href="#" class="text_pink" style="font-size: smaller;">Edit</a>)</h3>
+            <h3 class="col-12 text-capitalize text-center mt-4 text-dark-blue custom-display-medium">recent joined admins</h3>
         </div>
         <div class="row mb-3 justify-content-center p-4">
-            <div class="col-md-3 my-1">
+        @foreach($latest_admain_added as $admain)
+            <div class="col-md-3 p-2 my-1 px-4">
                 <div class="card mb-2 h-100">
-                    <img class="card-img-top" style="height: 200px;" src="https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?k=6&m=1179420343&s=612x612&w=0&h=y7GrwxrbixTWvJfaeiu55rWXMGYr6oP583uzJJ4-Kis=" alt="admin 1">
+                    <img class="card-img-top" style="height: 200px;" src="{{asset('images/admainSideImage/admainPhoto/'.$admain->image)}}" alt="admin 1">
                     <div class="card-body">
-                        <h5 class="card-title text-capitalize">admin name</h5>
-                        <p class="card-text">admin1@domain.com</p>
+                        <h5 class="card-title text-capitalize">{{$admain->name}}</h5>
+                        <p class="card-text">{{$admain->email}}</p>
                     </div>
                     <a href="#" class="stretched-link"></a>
                     <div class="card-footer">
-                        <small class="text-muted">joined in 10/10/2020</small>
+                        <small class="text-muted">joined in {{$admain->created_at}}</small>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 my-1">
-                <div class="card mb-2 h-100">
-                    <img class="card-img-top" style="height: 200px;" src="https://media.istockphoto.com/photos/portrait-of-casual-smiling-man-picture-id1138562953?k=6&m=1138562953&s=612x612&w=0&h=FzSLV-RtbFTz7z_VCbmuSCfEWpd4kYbnPxZ5d_mdDgg=" alt="admin 2">
-                    <div class="card-body">
-                        <h5 class="card-title text-capitalize">admin name</h5>
-                        <p class="card-text">admin1@domain.com</p>
-                    </div>
-                    <a href="#" class="stretched-link"></a>
-                    <div class="card-footer">
-                        <small class="text-muted">joined in 10/10/2020</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 my-1">
-                <div class="card mb-2 h-100">
-                    <img style="height: 200px;" class="card-img-top" src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f711d3badb2322f10cfbefb%2F0x0.jpg%3FcropX1%3D0%26cropX2%3D2700%26cropY1%3D395%26cropY2%3D2420"
-                         alt="admin 3">
-                    <div class="card-body">
-                        <h5 class="card-title text-capitalize">admin name</h5>
-                        <p class="card-text">admin1@domain.com</p>
-                    </div>
-                    <a href="#" class="stretched-link"></a>
-                    <div class="card-footer">
-                        <small class="text-muted">joined in 10/10/2020</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 my-1">
-                <div class="card mb-2 h-100">
-                    <img style="height: 200px;" class="card-img-top" src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f711d3badb2322f10cfbefb%2F0x0.jpg%3FcropX1%3D0%26cropX2%3D2700%26cropY1%3D395%26cropY2%3D2420"
-                         alt="admin 3">
-                    <div class="card-body">
-                        <h5 class="card-title text-capitalize">admin name</h5>
-                        <p class="card-text">admin1@domain.com</p>
-                    </div>
-                    <a href="#" class="stretched-link"></a>
-                    <div class="card-footer">
-                        <small class="text-muted">joined in 10/10/2020</small>
-                    </div>
-                </div>
-            </div>
-
+        @endforeach
         </div>
         <div class="row col-12 mt-1 justify-content-end mb-2">
-            <button class="btn bg_pink text-white px-4 py-2 custom-display-small border-secondary" id="see-more">See more</button>
+            <button class="btn bg_pink text-white  px-4 py-2 custom-display-small border-secondary" id="see-more"><a style="color:#fff" href="{{route('manage_admain')}}">See more</a></button>
         </div>
     </div>
     <!-- /. resent admins -->
@@ -214,76 +174,33 @@
     <!-- resent users -->
     <div class="container-fluid bg-light pb-5">
         <div class="row">
-            <h3 class="col-12 text-capitalize text-center mt-4 text-dark-blue custom-display-medium">recent joined users(<a href="#" class="text_pink" style="font-size: smaller;">Edit</a>)</h3>
+            <h3 class="col-12 text-capitalize text-center mt-4 text-dark-blue custom-display-medium">recent joined users</h3>
         </div>
         <div class="row mb-3 justify-content-center p-4 bg-light">
-            <div class="col-md-3 my-1">
+        @foreach($latest_vendors_register as $vendor)
+        @if($vendor->profile)
+            <div class="col-md-3 my-3 px-4">
                 <div class="card h-100">
-                    <img style="height: 200px;" src="https://cdn.sixtyandme.com/wp-content/uploads/2017/03/Sixty-and-Me_Which-Old-Woman-Will-You-Be-How-to-Become-the-Nice-One.jpg" class="card-img-top" alt="...">
+
+                    <img style="height: 200px;" src="{{asset('images/vendorImage/profileUserImage/'.$vendor->profile->image)}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title text-capitalize">user name</h5>
+                        <h5 class="card-title text-capitalize">{{$vendor->name}}</h5>
                         <p class="card-text">
-                            user1@domain.com <br>
-                            (111) 122-445-333<br>
-                            address(street-city-contry)
+                           {{$vendor->email}}<br>
+                            {{$vendor->profile->number}}<br>
+                            address({{$vendor->profile->location}})
                         </p>
                     </div>
                     <a href="#" class="stretched-link"></a>
                     <div class="card-footer">
-                        <small class="text-muted">joined in 10/10/2020</small>
+                        <small class="text-muted">joined in {{$vendor->created_at}}</small>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3  my-1">
-                <div class="card h-100">
-                    <img style="height: 200px;" src="https://static.wikia.nocookie.net/dreamfiction/images/d/db/TanyaKasis.jpg/revision/latest?cb=20181031054946" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-capitalize">user name</h5>
-                        <p class="card-text">
-                            user1@domain.com <br>
-                            (111) 122-445-333<br>
-                            address(street-city-contry)
-                        </p>
-                    </div>
-                    <a href="#" class="stretched-link"></a>
-                    <div class="card-footer">
-                        <small class="text-muted">joined in 10/10/2020</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 my-1">
-                <div class="card h-100">
-                    <img style="height: 200px;" src="https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?k=6&m=1179420343&s=612x612&w=0&h=y7GrwxrbixTWvJfaeiu55rWXMGYr6oP583uzJJ4-Kis=" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-capitalize">user name</h5>
-                        <p class="card-text">
-                            user1@domain.com <br>
-                            (111) 122-445-333<br>
-                            address(street-city-contry)
-                        </p>
-                    </div>
-                    <a href="#" class="stretched-link"></a>
-                    <div class="card-footer">
-                        <small class="text-muted">joined in 10/10/2020</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3  my-1">
-                <div class="card h-100">
-                    <img style="height: 200px;" src="https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?k=6&m=1179420343&s=612x612&w=0&h=y7GrwxrbixTWvJfaeiu55rWXMGYr6oP583uzJJ4-Kis=" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-capitalize">user name</h5>
-                        <p class="card-text">
-                            user1@domain.com <br>
-                            (111) 122-445-333<br>
-                            address(street-city-contry)
-                        </p>
-                    </div>
-                    <a href="#" class="stretched-link"></a>
-                    <div class="card-footer">
-                        <small class="text-muted">joined in 10/10/2020</small>
-                    </div>
-                </div>
-            </div>
+            @endif
+        @endforeach
+</div>
+</div>
+
 
 @endsection

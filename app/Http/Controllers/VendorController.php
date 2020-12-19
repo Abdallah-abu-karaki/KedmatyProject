@@ -45,4 +45,31 @@ public function add_product(addItemRequest $request){
      return redirect()->route('home');
 }
 
+     public function edit_item($id){
+     $item_info = Item::find($id);
+
+     $profile = User::with(['Profile'=>function($q){
+              $q->select('complete_profile','user_id');
+     }])->find(Auth::id());
+
+     return view('vendors.edit_item',compact('item_info','profile'));
+
+     }
+
+     public function update_Item(Request $request , $id){
+
+        $item = Item::find($id);
+
+               $doneUpdate = $item->update([
+                   'name' => $request['name'],
+                   'email' => $request['email'],
+               ]);
+
+               if($doneUpdate){
+                    toast('edit successfully','success');
+
+                   return redirect()->route('manage_admain');
+               }
+
+        }
 }

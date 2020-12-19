@@ -28,7 +28,14 @@ class HomeController extends Controller
         $user = Auth::user()->status;
 
         if($user == 1){
-            return view('admin.index');
+           $number_item             = Item::all()->count();
+           $number_admain           = User::where('status',1)->get()->count();
+           $number_vendors          = User::where('status',0)->get()->count();
+           $latest_admain_added     = User::with('profile')->where('status',1)->orderBy('id', 'desc')->take(4)->get();
+
+           $latest_vendors_register = User::with(['profile'])->where('status',0)->orderBy('id', 'desc')->take(4)->get();
+
+            return view('admin.index',compact(['number_item','number_admain','number_vendors','latest_admain_added','latest_vendors_register']));
         }else{
 
             $profile = User::with(['Profile'=>function($q){

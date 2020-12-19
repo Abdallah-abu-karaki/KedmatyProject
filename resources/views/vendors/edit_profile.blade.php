@@ -2,8 +2,6 @@
 
 @section('content')
 
-
-
     <div class="container  create_profile">
         <h2 class="mt-3 mb-3 title_page text-center">Edit Profile</h2>
         <div class="row">

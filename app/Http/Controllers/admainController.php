@@ -16,6 +16,11 @@ use RealRashid\SweetAlert\Facades\Alert;
 class admainController extends Controller
 {
 
+
+
+
+
+
     /***************************start manage admain controller *************************/
 
    /*_______________________Open  manage admain page _________________________________*/
@@ -37,11 +42,18 @@ class admainController extends Controller
    /*__________________________insert admain to database______________________________*/
    public function insert_admain(Request $request){
 
+        $file_extension = $request->image->getClientOriginalExtension();
+        $file_name = time().'.'.$file_extension;
+        $path = "images/admainSideImage/admainPhoto";
+        $request->image->move($path,$file_name);
+
        User::create([
+           'image'=>$file_name,
            'name' => $request['name'],
            'email' => $request['email'],
            'password' => Hash::make($request['password']),
            'status'=>1,
+
        ]);
        alert()->success('Admain Added', 'Successfully')->toToast();
        return redirect()->route('manage_admain');
@@ -65,7 +77,9 @@ class admainController extends Controller
 
    /*__________________________open edit admain page__________________________________*/
    public function edit_admain($id){
+
        $admain = User::find($id);
+
        return view('admin.edit_admain',compact('admain'));
    }
    /*_________________________________________________________________________________*/
@@ -124,10 +138,22 @@ class admainController extends Controller
 
     public function show_item_vendor($id){
 
-        $items = Item::where('user_id',$id)->paginate(5);
+        $items = Item::where('user_id',$id)->paginate(3);
 
         return view('admin.show_item_vendor',compact('items'));
     }
+
+    public function delete_item($id){
+
+    $item = Item::find($id);
+
+    $item->delete();
+
+    return redirect()->back();
+
+
+    }
+
     /**************************end manage item controller **************************/
 
 }

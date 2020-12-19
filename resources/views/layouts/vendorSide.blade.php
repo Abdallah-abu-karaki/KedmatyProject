@@ -106,8 +106,8 @@
                         <a class="nav-link" href="{{route('create_profile')}}">Create Profile</a>
                     @else
                         <a class="nav-link" href="{{route('my_profile')}}">My Profile</a>
+                        <a class="nav-link" href="{{route('addition')}}">addition</a>
                     @endif
-                    <a class="nav-link" href="{{route('addition')}}">addition</a>
                 </ul>
             </div>
         </div>

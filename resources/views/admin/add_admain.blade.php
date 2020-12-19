@@ -6,7 +6,7 @@
             <div class="container">
                 <i class="fas fa-user-plus fa-5x"></i>
                 <h1 class="mb-5">Add Admain</h1>
-                <form role="form" action="{{route('insert_admain')}}" method="POST">
+                <form role="form" action="{{route('insert_admain')}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                         <div class="col-lg-6">
@@ -17,14 +17,16 @@
                             <div class="form-group">
                                 <input type="text" class="form-control form-control-lg"  name="email"  placeholder="Email">
                             </div>
-
                         </div>
 
                         <div class="col-lg-6">
                             <div class="form-group">
                                 <input type="password" class="form-control form-control-lg" name="password" placeholder="Password">
                             </div>
-                            <input type="submit" class="btn btn-danger btn-block" value="Add Admain">
+                            <div class="form-group">
+                                <input type="file" class="form-control form-control-lg" name="image" placeholder="your photo">
+                            </div>
+                            <input type="submit" class="btn btn-danger btn-block justify-content-center" value="Add Admain">
                         </div>
                     </div>
                 </form>

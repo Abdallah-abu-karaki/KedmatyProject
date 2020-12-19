@@ -28,7 +28,8 @@
     height:48px;
 }
 .contact-me input[type="text"],
-.contact-me  input[type="password"]{
+.contact-me  input[type="password"],
+.contact-me  input[type="file"]{
     background-color: rgba(0,45,91,0.6);
     color:#fff;
     border: none;

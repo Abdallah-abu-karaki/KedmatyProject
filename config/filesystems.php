@@ -67,6 +67,12 @@ return [
             'url' => env('APP_URL').'/public',
             'visibility' => 'public',
         ],
+        'admainPhoto' => [
+                    'driver' => 'local',
+                    'root' => base_path('app/public/images/admainSideImage/admainPhoto'),
+                    'url' => env('APP_URL').'/public',
+                    'visibility' => 'public',
+                ],
 
         's3' => [
             'driver' => 's3',

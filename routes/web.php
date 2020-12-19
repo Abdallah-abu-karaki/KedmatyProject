@@ -43,6 +43,9 @@ use Illuminate\Support\Facades\Route;
     Route::post('/edit_profile/update/{id}','ProfileController@update_profile')->name('update_profile');
     Route::get('/deleteItem/{id}','VendorController@deleteItem')->name('deleteItem');
 
+    Route::get('/edit_item/{id}','VendorController@edit_item')->name('edit_item');
+    Route::post('/update_Item/{id}','VendorController@update_Item')->name('update_Item');
+
 ###########################################Start Manage Admain Routes #####################################
 Route::get('/manage_admain','admainController@manage_admain')->name('manage_admain');
 Route::get('/add_admain','admainController@add_admain')->name('add_admain');
@@ -60,4 +63,5 @@ Route::get('/delete_vendor/{id}','admainController@delete_vendor')->name('delete
 ######################################### Start Manage Item Route ##########################################
 Route::get('/manage_item','admainController@manage_item')->name('manage_item');
 Route::get('/show_item_vendor/{id}','admainController@show_item_vendor')->name('show_item_vendor');
+Route::get('/delete_item/{id}','admainController@delete_item')->name('delete_item');
 ######################################### End Manage Item Route ############################################
