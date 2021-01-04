@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Item extends Model
 {
+
+
     protected $table= "items";
     protected $fillable = ['name','description','price','like','dislike','image','count','user_id'];
     public $timestamps = false;
@@ -15,8 +17,6 @@ class Item extends Model
         return $this->belongsTo('App\User','user_id');
     }
 
-    public function camments(){
-        return $this->hasMany('App\Comment','item_id');
-    }
+
 
 }

@@ -4,7 +4,7 @@
 
 
 
-    <!--slider-->
+
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -25,17 +25,16 @@
                     <span>Shop now</span>
                     <p>Find all your requests from various vendors <br> on the same place.</p>
                 </div>
-
-
             </div>
             <div class="carousel-item">
-                <img src="images/logo13.jpeg" class="d-block w-100" alt="...">
+                <img src="images/logo13.jpeg" class="d-block w-100">
                 <div class="carousel-caption d-none d-md-block">
-                    <span>Let's volunteer</span>
+                    <span>Lets volunteer</span>
                     <p>We support volunteer work and exchange of materials.</p>
                 </div>
             </div>
         </div>
+
         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -48,6 +47,26 @@
 
     <!--latest-product-->
 
+<div class="swiper-container">
+<h2 class="text-center mb-4 text_pink">Latest Item Added</h2>
+      <div class="swiper-wrapper">
+      @foreach($items as $item)
+        <div class="swiper-slide" style="height:450px">
+            <div class="card" style="height:450px">
+                <img src="{{asset('images/vendorImage/addItemProductImage/'.$item->image)}}" height="200px" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{$item->name}}</h5>
+                  <p>{{$item->description}}</p>
+                   <span class="card-price-item">{{$item->price}}$</span><br>
+                  <a href="#" class="btn btn-primary">show more</a>
+                </div>
+              </div>
+        </div>
+      @endforeach
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
 
 
 

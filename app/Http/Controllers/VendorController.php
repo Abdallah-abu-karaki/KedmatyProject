@@ -17,7 +17,7 @@ class VendorController extends Controller
      }])->find(Auth::id());
      return view('vendors.addition',compact('profile'));
 }
-public function add_product(addItemRequest $request){
+public function add_Item(addItemRequest $request){
     $file_extension = $request->image->getClientOriginalExtension();
     $file_name = time().'.'.$file_extension;
     $path = "images/vendorImage/addItemProductImage";

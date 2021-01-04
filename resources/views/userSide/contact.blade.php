@@ -12,8 +12,8 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <form action="" method="POST" class="contact-form">
-
+                    <form action="{{route('send')}}" method="POST" class="contact-form">
+                        @csrf
                         <div class="row">
                             <div class="col-lg-12">
                                 <input type="text" name="name" id="c-name" placeholder="Your Name">

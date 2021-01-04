@@ -9,7 +9,7 @@
                 <img src="images/vendorImage/addItemProductImage/addProduct.png" alt="" style="width:300px;height:400px;">
             </div>
             <div class="col-lg-8">
-                <form action="{{route('add_product')}}" method="POST" enctype="multipart/form-data">
+                <form action="{{route('add_Item')}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
                         <label> Description  Product :</label>

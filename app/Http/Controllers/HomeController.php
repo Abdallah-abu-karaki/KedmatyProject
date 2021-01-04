@@ -60,22 +60,27 @@ class HomeController extends Controller
     public function contact(){
         return view('userSide.contact');
     }
+
     public function home_user(){
-        return view('welcome');
+    $items = Item::orderBy('id', 'desc')->take(3)->get();;
+
+    return view('welcome',compact('items'));
     }
+
+
     public function about_as(){
         return view('userSide.aboutAs');
     }
+    public function items(){
+        $items = Item::paginate(20);
+        return view('userSide.Item',compact('items'));
+    }
+    public function display_item($id){
 
-
-
-
-
-
-
-
-
-
-
+    $item = Item::find($id);
+    $user_id = $item->user_id;
+    $user = User::with(['profile'])->find($user_id);
+return view('userSide.display_item',['item'=>$item,'user'=>$user]);
+}
 
 }

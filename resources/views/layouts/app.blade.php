@@ -21,6 +21,9 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
@@ -38,7 +41,7 @@
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light bg-light1">
                 <div class="container">
-                <a class="navbar-brand" href="#"><img src="images/logo4.png"></a>
+                <a class="navbar-brand" href="#"><img src="{{asset('images/logo4.png')}}"></a>
                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -96,7 +99,7 @@
                                     <a class="nav-link nav2" href="{{route('home_user')}}">Home </a>
                                 </li>
 
-                                <li class="nav-item dropdown">
+                                <!--<li class="nav-item dropdown">
                                     <a class="nav-link nav2 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         categories
                                     </a>
@@ -106,7 +109,11 @@
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="#">exchange</a>
                                     </div>
-                                </li>
+                                </li>-->
+
+                                 <li class="nav-item">
+                                    <a class="nav-link nav2" href="{{route('items')}}">Items</a>
+                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link nav2" href="#">vendor</a>
                                 </li>
@@ -178,7 +185,7 @@
                             <li class="d-inline"><a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter-square"></i></a></li>
                             <li class="d-inline"><a title="instagram" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
                         </ul>
-                        <img src="images/logo.png" alt="khdmate-logo" class="w-50 m-2"/>
+                        <img src="{{asset('images/logo.png')}}" alt="khdmate-logo" class="w-50 m-2"/>
                     </div>
                 </div>
                 <!--copyright-->
@@ -195,5 +202,30 @@
         </div>
     </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+              var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: true,
+                },
+                pagination: {
+                  el: '.swiper-pagination',
+                },
+              });
+            </script>
+@include('sweetalert::alert')
 </body>
 </html>

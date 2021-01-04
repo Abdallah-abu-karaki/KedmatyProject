@@ -3,6 +3,23 @@ html {
 }
 
 
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    background-color: #fff;
+    width: 300px;
+    height: 500px;
+}
+.swiper-slide .card{
+    height: 450px;
+
+}
 /*navbar*/
 .vendor-dropDown{
     margin-top:13px;
@@ -346,3 +363,24 @@ footer .footer_col ,.copyright ,.bg-dark-blue{
     background-color: #012D5C ;
 }
 /* end about as */
+
+/* item page style */
+
+.card .card-body  .card-title{
+    color:#012D5C;
+}
+.card .card-body  .card-title i {
+    color:#FF656A;
+    padding-right:7px;
+}
+.card .card-body .card-description{
+    color:#a0a6af;
+}
+.card .card-body .item_show_more{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #012D5C;
+    border-color: #012D5C;
+    color:#fff;
+}
