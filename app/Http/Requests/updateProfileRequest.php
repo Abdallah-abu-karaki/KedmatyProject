@@ -24,9 +24,9 @@ class updateProfileRequest extends FormRequest
     public function rules()
     {
         return [
-            'description'=>'required|max:255',
+            'description'=>'required|max:255|min:40',
             'location'=>'required',
-            'number'=>'required',
+            'number'=>'required|digits:10',
         ];
     }
 
@@ -35,8 +35,11 @@ class updateProfileRequest extends FormRequest
         return[
 
             'description.required' => 'A description is required',
+            'description.max' =>'This is long description',
+            'description.min' =>'this is short description',
             'location.required' => 'A location is required',
             'number.required' => 'A number is required',
+            'number.digits'=>'this is not valide phone number',
 
         ];
     }

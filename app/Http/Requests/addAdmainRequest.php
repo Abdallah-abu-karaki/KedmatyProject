@@ -24,10 +24,29 @@ class addAdmainRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'status' =>'required'
+            'name' => ['required', 'max:30','unique:users'],
+            'email' => ['required', 'email', 'unique:users'],
+            'password' => ['required', 'min:8'],
+            'image'=>'required',
+
         ];
+        }
+       public function messages(){
+
+            return[
+
+                'name.required' => 'Name is required',
+                'name.unique'=>'This name already exists',
+                'name.max' =>'This is long name',
+                'email.required'=>'Email is required',
+                'email.email'=>'Must be email',
+                'email.unique'=>'This email already exists',
+                'password.required'=>'password is required',
+                'password.min'=>'this is short password',
+                'image.required'=>'image is required',
+
+            ];
+
+
     }
 }

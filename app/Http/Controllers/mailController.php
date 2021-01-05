@@ -1,21 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Requests\ContactRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\sendMail;
 
 class mailController extends Controller
 {
-   public function send( Request $request){
+   public function send(ContactRequest $request){
 
-   $this->validate($request,[
-        'name' => 'required',
-        'email' =>'required|email',
-        'phone' => 'required',
-        'message' =>'required',
-   ]);
 
     $data = array(
         'name'=>$request->name,

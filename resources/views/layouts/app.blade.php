@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <!-- Styles -->
+    <link href="{{ asset('css/admain.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
@@ -115,7 +116,7 @@
                                     <a class="nav-link nav2" href="{{route('items')}}">Items</a>
                                  </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav2" href="#">vendor</a>
+                                    <a class="nav-link nav2" href="{{route('display_vendor')}}">Vendor</a>
                                 </li>
 
                                 <li class="nav-item">

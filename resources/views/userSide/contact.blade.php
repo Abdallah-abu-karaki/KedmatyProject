@@ -15,31 +15,45 @@
                     <form action="{{route('send')}}" method="POST" class="contact-form">
                         @csrf
                         <div class="row">
-                            <div class="col-lg-12">
-                                <input type="text" name="name" id="c-name" placeholder="Your Name">
+                            <div class="col-lg-12 form-group">
+                                <input type="text" class="form-control-bg" name="name" id="c-name" placeholder="Your Name">
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <input type="email" name="email" id="c-email" placeholder="Your Email">
-                            </div>
-                        </div>
+                    @error('name')
+                    <div class="alert alert-danger">{{$message}}</div>
+                    @enderror
 
 
                         <div class="row">
-                            <div class="col-lg-12">
-                                <input type="tel" name="phone" id="c-phone" placeholder="Your Phone">
+                            <div class="col-lg-12 form-group">
+                                <input type="email" class="form-control-bg" name="email" id="c-email" placeholder="Your Email">
                             </div>
                         </div>
 
+                    @error('email')
+                    <div class="alert alert-danger">{{$message}}</div>
+                    @enderror
 
                         <div class="row">
-                            <div class="col-lg-12">
-                                <textarea id="c.message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                            <div class="col-lg-12 form-group">
+                                <input type="tel"  class="form-control-bg" name="phone" id="c-phone" placeholder="Your Phone">
                             </div>
                         </div>
 
+                    @error('phone')
+                    <div class="alert alert-danger">{{$message}}</div>
+                    @enderror
+
+                        <div class="row">
+                            <div class="col-lg-12 form-group">
+                                <textarea id="c.message" class="form-control-bg" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                            </div>
+                        </div>
+
+                    @error('message')
+                    <div class="alert alert-danger">{{$message}}</div>
+                    @enderror
 
                         <div class="row">
                             <div class="col-lg-12">

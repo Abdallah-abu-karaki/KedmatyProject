@@ -40,7 +40,8 @@ class admainController extends Controller
    /*_________________________________________________________________________________*/
 
    /*__________________________insert admain to database______________________________*/
-   public function insert_admain(Request $request){
+   public function insert_admain(addAdmainRequest $request){
+
 
         $file_extension = $request->image->getClientOriginalExtension();
         $file_name = time().'.'.$file_extension;

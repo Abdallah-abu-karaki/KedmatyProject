@@ -13,21 +13,21 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/logo11.jpeg" class="d-block w-100" alt="...">
+                <img src="images/slid1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <span>Come on !</span>
                     <p>You can join the sellers, We help you to showcase your products</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/logo12.jpeg" class="d-block w-100" alt="...">
+                <img src="images/slid2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <span>Shop now</span>
                     <p>Find all your requests from various vendors <br> on the same place.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/logo13.jpeg" class="d-block w-100">
+                <img src="images/slid4.jpg" class="d-block w-100">
                 <div class="carousel-caption d-none d-md-block">
                     <span>Lets volunteer</span>
                     <p>We support volunteer work and exchange of materials.</p>

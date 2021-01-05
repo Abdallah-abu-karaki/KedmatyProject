@@ -25,6 +25,8 @@ use Illuminate\Support\Facades\Route;
     Route::get('/','HomeController@home_user')->name('home_user');
     Route::get('/display_item/{id}','HomeController@display_item')->name('display_item');
     Route::get('/items','HomeController@items')->name('items');
+    Route::get('/vendors','HomeController@display_vendor')->name('display_vendor');
+    Route::get('/Item_vendor/{id}','HomeController@display_Item_vendor')->name('display_Item_vendor');
     Route::get('/about_as','HomeController@about_as')->name('about_as');
     Route::get('/contact','HomeController@contact')->name('contact');
     Route::post('/contact_send','mailController@send')->name('send');

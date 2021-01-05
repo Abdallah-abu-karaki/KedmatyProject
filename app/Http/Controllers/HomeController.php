@@ -57,30 +57,41 @@ class HomeController extends Controller
 
     }
 
+    public function display_vendor(){
+         $vendors = User::with(['profile'=>function($q){
+                $q->select('location','number','image','user_id');
+            }])->where('status',0)->get();
+         return view('userSide.display_vendor',compact('vendors'));
+    }
+
+    public function display_Item_vendor($id){
+         $items = Item::where('user_id',$id)->get();
+         return view('userSide.display_vendor_item',compact('items'));
+    }
+
     public function contact(){
         return view('userSide.contact');
     }
 
     public function home_user(){
-    $items = Item::orderBy('id', 'desc')->take(3)->get();;
-
-    return view('welcome',compact('items'));
+        $items = Item::orderBy('id', 'desc')->take(3)->get();
+        return view('welcome',compact('items'));
     }
-
 
     public function about_as(){
         return view('userSide.aboutAs');
     }
+
     public function items(){
         $items = Item::paginate(20);
         return view('userSide.Item',compact('items'));
     }
-    public function display_item($id){
 
-    $item = Item::find($id);
-    $user_id = $item->user_id;
-    $user = User::with(['profile'])->find($user_id);
-return view('userSide.display_item',['item'=>$item,'user'=>$user]);
-}
+    public function display_item($id){
+        $item = Item::find($id);
+        $user_id = $item->user_id;
+        $user = User::with(['profile'])->find($user_id);
+    return view('userSide.display_item',['item'=>$item,'user'=>$user]);
+    }
 
 }
