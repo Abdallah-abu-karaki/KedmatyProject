@@ -74,7 +74,7 @@ class HomeController extends Controller
     }
 
     public function home_user(){
-        $items = Item::orderBy('id', 'desc')->take(3)->get();
+        $items = Item::orderBy('id', 'desc')->take(5)->get();
         return view('welcome',compact('items'));
     }
 

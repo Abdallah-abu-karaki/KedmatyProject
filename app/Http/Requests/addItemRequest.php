@@ -26,7 +26,7 @@ class addItemRequest extends FormRequest
         return [
             'description'  =>'required|min:40|max:120',
             'name'         =>'required|min:5|max:17',
-            'price'        =>'required',
+            'price'        =>'required|numeric',
             'count'        =>'required',
             'image'        =>'required',
         ];
@@ -41,6 +41,7 @@ class addItemRequest extends FormRequest
             'name.max'              =>'this is long name ',
             'name.required'         =>'name is required',
             'price.required'        =>'required',
+             'price.numeric'        =>'most numeric',
             'count.required'        =>'required',
             'image.required'        =>'required',
 

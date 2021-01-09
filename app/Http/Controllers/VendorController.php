@@ -52,24 +52,34 @@ public function add_Item(addItemRequest $request){
               $q->select('complete_profile','user_id');
      }])->find(Auth::id());
 
+
      return view('vendors.edit_item',compact('item_info','profile'));
 
      }
 
-     public function update_Item(Request $request , $id){
+       public function update_Item(Request $request ,$id){
 
-        $item = Item::find($id);
+            $Item = Item::find($id);
+            $file_extension = $request->image->getClientOriginalExtension();
+            $file_name = time().'.'.$file_extension;
+            $path = "images/vendorImage/addItemProductImage";
+            $request->image->move($path,$file_name);
+            $doneUpdate = $Item->update([
+                        'description'=> $request->description,
+                        'name' => $request->name,
+                        'price' =>$request->price ,
+                        'count'=>$request->count,
+                        'image' =>$file_name,
+                        'like'=>1,
+                        'dislike'=>2,
+                        'user_id'=>Auth::id(),
+            ]);
 
-               $doneUpdate = $item->update([
-                   'name' => $request['name'],
-                   'email' => $request['email'],
-               ]);
+            if($doneUpdate){
+                 toast('edit successfully','success');
 
-               if($doneUpdate){
-                    toast('edit successfully','success');
-
-                   return redirect()->route('manage_admain');
-               }
-
+                return redirect()->route('home');
+            }
         }
+
 }

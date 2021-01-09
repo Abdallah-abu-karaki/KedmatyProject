@@ -28,7 +28,7 @@
                     @enderror
                     <div class="form-group">
                         <label>Price product:</label>
-                        <input type="number" name="price" value="{{old('price')}}" class="form-control border-input @error('price') is-invalid @enderror"/>
+                        <input type="text" name="price" value="{{old('price')}}" class="form-control border-input @error('price') is-invalid @enderror"/>
                     </div>
                     @error('price')
                     <div class="alert alert-danger">{{$message}}</div>

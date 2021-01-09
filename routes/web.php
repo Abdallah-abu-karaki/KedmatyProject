@@ -14,24 +14,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-    Auth::routes();
+      Auth::routes(['verify' => true]);
+
+                                ############ start user Side #############
+        ################################### user side manage ##########################################
+        Route::get('/','HomeController@home_user')->name('home_user');
+        Route::get('/display_item/{id}','HomeController@display_item')->name('display_item');
+        Route::get('/items','HomeController@items')->name('items');
+        Route::get('/vendors','HomeController@display_vendor')->name('display_vendor');
+        Route::get('/Item_vendor/{id}','HomeController@display_Item_vendor')->name('display_Item_vendor');
+        Route::get('/about_as','HomeController@about_as')->name('about_as');
+        Route::get('/contact','HomeController@contact')->name('contact');
+        Route::post('/contact_send','mailController@send')->name('send');
+        ################################### user side manage  ##########################################
+                                ############ end user Side #############
+   Route::group(
+    [
+        'middleware' => ['auth','verified']
+    ], function(){
 
     ################################# check side admain or vendor #################################
-    Route::get('/home', 'HomeController@check')->middleware('auth')->name('home');
+     Route::get('/home', 'HomeController@check')->name('home');
     ################################# check side admain or vendor #################################
-
-                            ############ start user Side #############
-    ################################### user side manage ##########################################
-    Route::get('/','HomeController@home_user')->name('home_user');
-    Route::get('/display_item/{id}','HomeController@display_item')->name('display_item');
-    Route::get('/items','HomeController@items')->name('items');
-    Route::get('/vendors','HomeController@display_vendor')->name('display_vendor');
-    Route::get('/Item_vendor/{id}','HomeController@display_Item_vendor')->name('display_Item_vendor');
-    Route::get('/about_as','HomeController@about_as')->name('about_as');
-    Route::get('/contact','HomeController@contact')->name('contact');
-    Route::post('/contact_send','mailController@send')->name('send');
-    ################################### user side manage  ##########################################
-                            ############ end user Side #############
 
                             ############ start vendor Side #############
     ################################# Vendor side manage profile ###################################
@@ -74,3 +78,4 @@ use Illuminate\Support\Facades\Route;
     Route::get('/delete_item/{id}','admainController@delete_item')->name('delete_item');
     #################################### End Manage Item Route    ##############################
                                  ############ end Admain Side #############
+});

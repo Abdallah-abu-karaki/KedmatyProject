@@ -20,70 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="921f4b23-3990-4be8-abe2-969f09a13595" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/slid1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/slid2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/slid3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/slid4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/userSide/display_vendor.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/userSide/display_vendor_item.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kedmaty.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kedmaty.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/mailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/mailController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/addAdmainRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/addAdmainRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/createProfileRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/createProfileRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/updateProfileRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/updateProfileRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/240_F_225095067_EtMTkFEKi8PEylTKQEuGCrHENyztLzkP.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Capture.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Capture1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Capture2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/QeFamTml3W.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/WhatsApp Image 2020-10-23 at 10.40.16 PM.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/c.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/c2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/clothes.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/food.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo11.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo12.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo13.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/others.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s24.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s32.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/s9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slider.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slider2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slider3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slider4.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slider5.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slider6.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/the most last one.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/ytnP0yWL01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/add_admain.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/add_admain.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/manage_vendor.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/manage_vendor.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/userSide/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/userSide/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VendorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VendorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/addItemRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/addItemRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/auth.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/auth.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/userSide/display_item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/userSide/display_item.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendors/addition.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendors/addition.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendors/edit_item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendors/edit_item.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -221,7 +167,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../schoolManagementSystem" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -416,7 +362,9 @@
       <workItem from="1609688212163" duration="2073000" />
       <workItem from="1609754845047" duration="20644000" />
       <workItem from="1609848001913" duration="9900000" />
-      <workItem from="1609869786983" duration="7654000" />
+      <workItem from="1609869786983" duration="9988000" />
+      <workItem from="1610103389371" duration="649000" />
+      <workItem from="1610207707409" duration="11640000" />
     </task>
     <servers />
   </component>

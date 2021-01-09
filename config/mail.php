@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('MAIL_MAILER', 'smtp'),
+  /*  'default' => env('MAIL_MAILER', 'smtp'),*/
 
     /*
     |--------------------------------------------------------------------------
@@ -32,12 +32,12 @@ return [
     |            "postmark", "log", "array"
     |
     */
-
+/*
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
             'host' => env('MAIL_HOST', 'smtp.gmail.com'),
-            'port' => env('MAIL_PORT', 465),
+            'port' => env('MAIL_PORT', 587),
             'encryption' => env('MAIL_ENCRYPTION', 'ssl'),
             'username' => env('MAIL_USERNAME'),
             'password' => env('MAIL_PASSWORD'),
@@ -72,7 +72,7 @@ return [
             'transport' => 'array',
         ],
     ],
-
+*/
     /*
     |--------------------------------------------------------------------------
     | Global "From" Address
@@ -84,10 +84,10 @@ return [
     |
     */
 
-    'from' => [
+    /*'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
-    ],
+    ],*/
 
     /*
     |--------------------------------------------------------------------------
@@ -100,12 +100,40 @@ return [
     |
     */
 
-    'markdown' => [
+   /* 'markdown' => [
         'theme' => 'default',
 
         'paths' => [
             resource_path('views/vendor/mail'),
         ],
-    ],
+    ],*/
+'driver' => env('MAIL_DRIVER', 'smtp'),
 
+'host' => env('MAIL_HOST', 'smtp.gmail.com'),
+
+'port' => env('MAIL_PORT', 587),
+
+'from' => [
+    'address' => env('MAIL_FROM_ADDRESS', 'username@gmail.com'),
+    'name' => env('MAIL_FROM_NAME', 'Payne Curtis'),
+],
+
+'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+
+'username' => env('MAIL_USERNAME'),
+
+'password' => env('MAIL_PASSWORD'),
+
+
+'sendmail' => '/usr/sbin/sendmail -bs',
+
+'markdown' => [
+    'theme' => 'default',
+
+    'paths' => [
+        resource_path('views/vendor/mail'),
+    ],
+],
+
+'log_channel' => env('MAIL_LOG_CHANNEL'),
 ];

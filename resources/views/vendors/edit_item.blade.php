@@ -1,7 +1,6 @@
 @extends('layouts.vendorSide')
 
 @section('content')
-
     <div class="container add_product_vendor">
         <h2 class="text-center add_product_vendor_heading">Edit Product</h2>
         <div class="row">
@@ -9,7 +8,7 @@
                 <img src="{{asset('images/vendorImage/addItemProductImage/addProduct.png')}}" alt="" style="width:300px;height:400px;">
             </div>
             <div class="col-lg-8">
-                <form action="{{route('add_product')}}" method="POST" enctype="multipart/form-data">
+                <form action="{{route('update_Item',$item_info->id)}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
                         <label> Description  Product :</label>
@@ -28,7 +27,7 @@
                     @enderror
                     <div class="form-group">
                         <label>Price product:</label>
-                        <input type="number" name="price" value="{{$item_info->price}}" class="form-control border-input @error('price') is-invalid @enderror"/>
+                        <input type="text" name="price" value="{{$item_info->price}}" class="form-control border-input @error('price') is-invalid @enderror"/>
                     </div>
                     @error('price')
                     <div class="alert alert-danger">{{$message}}</div>
