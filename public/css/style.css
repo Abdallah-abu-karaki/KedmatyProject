@@ -200,7 +200,9 @@ footer i , .text_larger {
     font-size: x-large;
 }
 footer div  h6 {
-    text-shadow: 0.5px 0.5px 3px #e97d81, -0.5px -0.5px 3px rgb(2, 62, 126) ;
+   font-size:30px;
+    color:#fff;
+    padding-bottom:20px;
 }
 footer {
     font-size: 14px;
@@ -226,10 +228,7 @@ a.bg-dark-blue:hover ,a.bg-dark-blue:active {
     background-color: #014fa1 ;
 }
 
-footer hr {
-    width: 70%;
-    border-top: 1px solid #fff;
-}
+
 
 /*copyright*/
 .copyright {

@@ -2,11 +2,11 @@
 
 @section('content')
 
-    <h1 class="text-center mb-4 manage_items_heading mt-2">Items </h1>
+    <h1 class="text-center mb-4 manage_items_heading mt-2">Items {{$user->name}}</h1>
 
-    <div class="container">
+    <div class="container" style="margin-bottom:53px">
          @if($items->count() == 0)
-            <p class="alert-no-item-added mt-4 mb-5">no items added</p>
+            <p class="alert-no-item-added  mb-5" style="margin-top:70px">no items added</p>
          @endif
           <div class="row">
          @foreach($items as $item)
@@ -15,7 +15,7 @@
                <img height="250px" src="{{asset('images/vendorImage/addItemProductImage/'.$item->image)}}" class="card-img-top" alt="...">
                <div class="card-body">
                     <p style="color:#012D5C;"><i class="fas fa-signature mr-2"></i>{{$item->name}}</p>
-                    <p style="color:#a0a6af;"><i class="fas fa-hand-holding-usd mr-2"></i>{{$item->price}}</p>
+                    <p style="color:#a0a6af;"><i class="fas fa-hand-holding-usd mr-2"></i>{{$item->price}} JD</p>
                </div>
              </div>
           </div>

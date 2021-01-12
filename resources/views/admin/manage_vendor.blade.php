@@ -7,7 +7,7 @@
         <div class="row">
 @foreach($vendors as $v)
     @if($v->profile)
-            <div class="col-lg-6 mt-3">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-3">
                 <div class="vendor-box-data">
                     <div class="left-side-vendor-box">
                       <img src="{{asset('images/vendorImage/profileUserImage/'.$v->profile->image)}}" width="100%" height="100%" alt="image_vendor">

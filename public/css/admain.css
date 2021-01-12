@@ -77,8 +77,9 @@
     color:#001f3f;
 }
 .vendor-box-data{
-    height: 250px;
+    height: 270px;
     border:1px solid lightgray;
+    margin-bottom: 30px;
 }
 .left-side-vendor-box{
     float: left;
@@ -93,23 +94,27 @@
     background-color: #fff;
     color:#001f3f;
 }
-
-.right-side-vendor-box h5 , .span_manage_vendor{
-    padding-top: 30px;
-    padding-left: 15px;
+.right-side-vendor-box i:first-of-type{
+    padding-top:20px;
 }
-.right-side-vendor-box .span_manage_vendor{
-    padding-top: 15px;
+.right-side-vendor-box i{
+    padding-left:15px;
+    padding-top:10px;
+}
+.right-side-vendor-box h5 , .span_manage_vendor{
+    padding-top: 0px;
     padding-left: 15px;
     display: block;
+
 }
+
 .right-side-vendor-box h5 i, .span_manage_vendor i{
     padding-right: 15px;
 }
 .right-side-vendor-box a{
     position: absolute;
     right: 40px;
-    bottom: 20px;
+    bottom: 40px;
     color: #FF656A;
 
 }

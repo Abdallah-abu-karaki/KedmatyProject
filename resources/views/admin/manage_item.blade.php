@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1 class="text-center mb-4 manage_items_heading">manage item</h1>
+    <h1 class="text-center mb-4 manage_items_heading">Manage item</h1>
     <div class="container">
         <div class="row">
     <div class="col-lg-12">
@@ -18,7 +18,7 @@
                 <tbody>
                 @foreach($items as $item)
                 <tr class="row_data_vendor_and_item">
-                   <td style="width: 200px;"><img src="{{asset('images/vendorImage/profileUserImage/'.$item->image)}}" width="150px"/></td>
+                   <td style="width:200px; height:175px;"><img src="{{asset('images/vendorImage/profileUserImage/'.$item->image)}}" width="150px" style="150px"/></td>
                     <td>{{$item->user->name}}</td>
                     <td>{{$item->user->email}}</td>
                     <td><a href="{{route('show_item_vendor',$item->user->id)}}" class="show-item"><i class="fas fa-eye"></i>show items</a></td>

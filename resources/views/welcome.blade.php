@@ -59,7 +59,7 @@
                 <img src="{{asset('images/vendorImage/addItemProductImage/'.$item->image)}}" height="200px" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h4 class="card-title"><i class="fas fa-signature mr-2"></i>{{$item->name}}</h4>
-                   <span class="card-price-item"><i class="fas fa-hand-holding-usd mr-2"></i>{{$item->price}} $</span>
+                   <span class="card-price-item"><i class="fas fa-hand-holding-usd mr-2"></i>{{$item->price}} JD</span>
                    <br>
                 </div>
               </div>
@@ -81,7 +81,7 @@
                <img src="{{asset('images/vendorImage/addItemProductImage/'.$item->image)}}" height="200px" class="card-img-top" alt="...">
                 <div class="card-body" id="last-product-1">
                     <h5 class="card-title text_pink text-capitalize" id="last-product-name-1">{{$item->name}}</h5>
-                    <p class="card-text text-muted" id="last-product-info-1">{{$item->price}} </p>
+                    <p class="card-text text-muted" id="last-product-info-1">{{$item->price}} JD</p>
                     <a href="{{route('display_item',$item->id)}}" class="btn btn-primary bg-dark-blue stretched-link rounded-pill">Go Now</a>
                 </div>
             </div>

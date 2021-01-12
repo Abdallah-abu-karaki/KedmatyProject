@@ -96,7 +96,7 @@
         </div>
         <div class="row mb-3 justify-content-center p-4">
         @foreach($latest_admain_added as $admain)
-            <div class="col-md-3 p-2 my-1 px-4">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 p-2 my-1 px-4">
                 <div class="card mb-2 h-100">
                     <img class="card-img-top" style="height: 200px;" src="{{asset('images/admainSideImage/admainPhoto/'.$admain->image)}}" alt="admin 1">
                     <div class="card-body" style="margin:-4px;">
@@ -125,7 +125,7 @@
         <div class="row mb-3 justify-content-center p-4 bg-light">
         @foreach($latest_vendors_register as $vendor)
         @if($vendor->profile)
-            <div class="col-md-3 my-3 px-4">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 my-3 px-4">
                 <div class="card h-100">
 
                     <img style="height: 200px;" src="{{asset('images/vendorImage/profileUserImage/'.$vendor->profile->image)}}" class="card-img-top" alt="...">

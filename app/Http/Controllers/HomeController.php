@@ -66,7 +66,8 @@ class HomeController extends Controller
 
     public function display_Item_vendor($id){
          $items = Item::where('user_id',$id)->get();
-         return view('userSide.display_vendor_item',compact('items'));
+         $user = User::find($id);
+         return view('userSide.display_vendor_item',compact(['items','user']));
     }
 
     public function contact(){
@@ -91,6 +92,7 @@ class HomeController extends Controller
     public function display_item($id){
         $item = Item::find($id);
         $user_id = $item->user_id;
+
         $user = User::with(['profile'])->find($user_id);
     return view('userSide.display_item',['item'=>$item,'user'=>$user]);
     }

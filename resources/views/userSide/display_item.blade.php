@@ -12,7 +12,7 @@
         <h2 class="row text-capitalize mb-2 text-dark-blue" id="">{{$item->name}}</h2>
            <div class="d-flex justify-content-between mr-5">
            <div  id="" class="lead font-weight-normal text-dark-blue mb-1">
-             <span class="font-weight-bolder">{{$item->price}} $</span>
+             <span class="font-weight-bolder">{{$item->price}} JD</span>
            </div>
              <ul class=" list-inline mb-0 mt-2">
                <li class="list-inline-item mr-0"><i class="fa fa-star text_pink"></i></li>

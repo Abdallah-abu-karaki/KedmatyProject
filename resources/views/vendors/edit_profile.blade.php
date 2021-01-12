@@ -5,7 +5,7 @@
     <div class="container  create_profile">
         <h2 class="mt-3 mb-3 title_page text-center">Edit Profile</h2>
         <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
                 <form action="{{route('update_profile',$profile->profile->id)}}" method="POST">
                     @csrf
                     <div class="form-group">
@@ -32,8 +32,8 @@
                     <input type="submit" value="Save" class="btn btn-danger mt-3 mb-5"/>
                 </form>
             </div>
-            <div class="col-lg-5">
-                <img src="{{asset('images/vendorImage/profileImage/editProfile.png')}}" alt="image1" style="width:400px; height:400px;">
+            <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+                <img src="{{asset('images/vendorImage/profileImage/editProfile.png')}}" alt="image1" style="width:330px; height:400px;">
             </div>
         </div>
     </div>

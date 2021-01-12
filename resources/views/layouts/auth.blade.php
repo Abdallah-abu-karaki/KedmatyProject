@@ -72,6 +72,36 @@
         </nav>
     </div>
 
+
+<div class="nav2">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link nav2" href="{{route('home_user')}}">Home </a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link nav2" href="{{route('items')}}">Items</a>
+                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav2" href="{{route('display_vendor')}}">Vendor</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link nav2" href="{{route('about_as')}}">about us</a>
+                                </li>
+                            </ul>
+                            <a  class="navbar2-btn" href="{{route('contact')}}">contact Now</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
     <main class="mt-5">
         @yield('content')
     </main>

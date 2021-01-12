@@ -99,19 +99,6 @@
                                 <li class="nav-item active">
                                     <a class="nav-link nav2" href="{{route('home_user')}}">Home </a>
                                 </li>
-
-                                <!--<li class="nav-item dropdown">
-                                    <a class="nav-link nav2 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        categories
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">sell and buy</a>
-                                        <a class="dropdown-item" href="#">volunteer works</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">exchange</a>
-                                    </div>
-                                </li>-->
-
                                  <li class="nav-item">
                                     <a class="nav-link nav2" href="{{route('items')}}">Items</a>
                                  </li>
@@ -124,7 +111,6 @@
                                 </li>
                             </ul>
                             <a  class="navbar2-btn" href="{{route('contact')}}">contact Now</a>
-
                         </div>
                     </div>
                 </nav>
@@ -143,50 +129,30 @@
                 <!--second bar -->
                 <!--col 1-->
                 <div class="row ">
-                    <div class="col-md-3 col-sm-6 col-12 pt-4 footer_col pb-3 text-light">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 pt-4 footer_col pb-3 text-light">
                         <h6 class="text-uppercase">our providers</h6>
-                        <hr class="mb-3 mt-0 mx-auto rounded">
+
                         <div class="px-5">
                             All peopls who join with our Khdmate family are providers for us ,we are groew together as a large family.<br>
                             "Our goal is give the best for you."
                         </div>
                     </div>
-                    <!--col 2-->
-                    <div class="col-md-3 col-sm-6 col-12 p-0 pt-4 footer_col pb-3 text-light">
-                        <h6 class="text-uppercase">categorize</h6>
-                        <hr class="mb-3 mt-0 mx-auto">
-                        <ul class="list-unstyled text-capitalize">
-                            <li>foods</li>
-                            <li>clothes</li>
-                            <li>services</li>
-                            <li>furniture</li>
-                            <li>Others</li>
-                            <li>payment</li>
-                            <li>exchange</li>
-                            <li>volunteering</li>
-                        </ul>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer_col pb-3 text-light">
+                    <img src="{{asset('images/logo.png')}}" alt="khdmate-logo" class="w-50 m-2"/>
+                    <p style="padding-top: 20px; font-size: 20px;">khedmationline@gmail.com</p>
                     </div>
-                    <!--col 3-->
-                    <div class="col-md-3 col-sm-6 col-12 pt-4 footer_col pb-3 text-light">
-                        <h6 class="text-uppercase">subscribe us</h6>
-                        <hr class="mb-3 mt-0 mx-auto">
-                        <div class="align-content-center justify-content-center flex-sm-column">
-                            <input id="e-mail" type="email" name="email-address" placeholder="your email" class="col-7 mb-2 mx-auto px-2 py-1 rounded d-block"/>
-                            <button for="e-mail" class="col-7 btn-primary rounded bg_pink p-1 px-5">Subscribe</button>
-                        </div>
-                        <p class="px-5 py-2">So you will receive our updates on your email.</p>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-12 pt-4 footer_col pb-3 text-light">
+
+                    <div class=" col-lg-4 col-md-4 col-sm-12 col-xs-12 pt-4 footer_col pb-3 text-light">
                         <h6 class="text-uppercase">Contact Us</h6>
-                        <hr class="mb-3 mt-0 mx-auto">
-                        <p><a class="text-light" href="#" target="_blank" title="Khdmate">info@domain.com</a></p>
-                        <ul class="justify-content-center rounded-top px-1 social">
+
+
+                        <ul class="justify-content-center rounded-top px-1 social" style="padding-top:20px;">
                             <li class="d-inline"><a title="youtube" target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
                             <li class="d-inline"><a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a></li>
                             <li class="d-inline"><a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter-square"></i></a></li>
                             <li class="d-inline"><a title="instagram" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
                         </ul>
-                        <img src="{{asset('images/logo.png')}}" alt="khdmate-logo" class="w-50 m-2"/>
+
                     </div>
                 </div>
                 <!--copyright-->

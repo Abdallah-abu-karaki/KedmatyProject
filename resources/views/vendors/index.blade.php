@@ -10,17 +10,17 @@
             <h4 class="statistics-head mb-3 text-center" style="color: #ffa600;">statistics</h4>
 
             <div class="row">
-                <div class="offset-lg-1 offset-sm-1 col-lg-4">
+                <div class="offset-lg-1  col-lg-4 col-md-6 col-sm-6 col-xs-6">
                     <div class="statistics-card text-center">
-                        <img src="{{asset('images/vendorImage/homeVendorImage/sta.jpg')}}" />
+                        <i class="fas fa-plus-square fa-4x"></i>
                         <h5>Added products</h5>
                         <h1>{{$number_item_add}}</h1>
                     </div>
                 </div>
 
-                <div class="offset-lg-2 col-lg-4">
+                <div class="offset-lg-2 col-lg-4 col-md-6 col-sm-6 col-xs-6">
                     <div class="statistics-card text-center">
-                        <img src="{{asset('images/vendorImage/homeVendorImage/sta1.jpg')}}" />
+                        <i class="fas fa-box-open fa-4x"></i>
                         <h5>out of stock</h5>
                         <h1>{{$number_item_out_of_stock}}</h1>
                     </div>
@@ -36,10 +36,10 @@
         <h4 class="statistics-head mb-3 text-center" style="color: #ffa600;">Added products</h4>
         @endif
         <div class="row">
-@foreach($item as $i)
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12 item">
+        @foreach($item as $i)
+            <div class="col-lg-3 col-md-4 col-sm-6  col-xs-12  item">
                 <div class="card main-card">
-                    <img src="{{asset('images/vendorImage/addItemProductImage/'.$i->image)}}" class="card-img-top" alt="#" />
+                    <img style="height: 254px;" src="{{asset('images/vendorImage/addItemProductImage/'.$i->image)}}" class="card-img-top" alt="#" />
                     <div class="card-body">
                         <h5 class="card-title pr-name">{{$i->name}}</h5>
                         <span class="fa fa-star checked"></span>

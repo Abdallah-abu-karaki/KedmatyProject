@@ -10,7 +10,7 @@
                 <img src="{{asset('images/vendorImage/addItemProductImage/'.$item->image)}}" height="200px" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"><i class="fas fa-signature"></i>{{$item->name}}</h5>
-                  <p class="card-description"><i class="fas fa-hand-holding-usd mr-2"></i>{{$item->price}}</p>
+                  <p class="card-description"><i class="fas fa-hand-holding-usd mr-2"></i>{{$item->price}} JD</p>
                    <a href="{{route('display_item',$item->id)}}" class="btn btn-primary item_show_more">show more..</a>
                 </div>
              </div>
