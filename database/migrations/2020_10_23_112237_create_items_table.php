@@ -18,8 +18,6 @@ class CreateItemsTable extends Migration
             $table->string('name');
             $table->text('description');
             $table->double('price');
-            $table->integer('like');
-            $table->integer('dislike');
             $table->text('image');
             $table->timestamps();
         });

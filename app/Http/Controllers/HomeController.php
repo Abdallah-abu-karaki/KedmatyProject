@@ -74,8 +74,9 @@ class HomeController extends Controller
     }
 
     public function home_user(){
-        $items = Item::orderBy('id', 'desc')->take(5)->get();
-        return view('welcome',compact('items'));
+        $items = Item::orderBy('id', 'desc')->take(10)->get();
+        $random_item = Item::all()->random(3);
+        return view('welcome',compact(['items','random_item']));
     }
 
     public function about_as(){

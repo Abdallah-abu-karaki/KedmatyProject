@@ -13,10 +13,14 @@
                         <img src="{{asset('images/vendorImage/profileUserImage/'.$v->profile->image)}}" width="100%" height="100%" alt="image_vendor">
                     </div>
                     <div class="right-side-vendor-box">
-                        <h5><i class="fas fa-user"></i> {{$v->name}}</h5>
-                         <span class="span_manage_vendor"><i class="fas fa-paper-plane"></i> {{$v->email}}</span>
-                        <span class="span_manage_vendor"><i class="fas fa-phone"></i> {{$v->profile->number}}</span>
-                        <span class="span_manage_vendor"><i class="fas fa-map-marker-alt"></i> {{$v->profile->location}}</span>
+                    <i class="fas fa-user"></i>
+                        <h5>{{$v->name}}</h5>
+                        <i class="fas fa-paper-plane"></i>
+                         <span class="span_manage_vendor">{{$v->email}}</span>
+                         <i class="fas fa-phone"></i>
+                        <span class="span_manage_vendor">{{$v->profile->number}}</span>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="span_manage_vendor"> {{$v->profile->location}}</span>
                         <a href="{{route('display_Item_vendor',$v->id)}}">Item vendor</a>
                     </div>
                 </div>

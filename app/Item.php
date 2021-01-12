@@ -9,7 +9,7 @@ class Item extends Model
 
 
     protected $table= "items";
-    protected $fillable = ['name','description','price','like','dislike','image','count','user_id'];
+    protected $fillable = ['name','description','price','image','count','user_id'];
     public $timestamps = false;
 
 

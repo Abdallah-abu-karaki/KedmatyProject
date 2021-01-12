@@ -291,7 +291,7 @@ footer hr {
     margin-bottom: 12px;
     box-shadow: 1px 1px 6px #FF656A ;
 }
-.formcontact input[type=submit] {
+ .formcontact input[type=submit] {
     background-color: #FF656A;
     color: white;
     padding: 12px 20px;
@@ -306,12 +306,32 @@ footer hr {
     margin-top: 6px;
 }
 /*end contact */
-/* about as */
+/* Start Style About Us Style */
+.about-as-heading{
+    font-weight: 450;
+    font-size: 33px;
+    margin-bottom: 17px;
+}
+.about-as-p{
+    color: #2e2d2d !important;
+    font-size: 18px;
+}
 
 button ,a ,img {
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
     box-shadow 0.2s ease;
 }
+.our-team h2{
+    font-weight: 400;
+}
+.our-team p{
+    color: #2e2d2d  !important;
+}
+.about-as .link-about{
+    text-decoration:none;
+    font-weight:bold;
+}
+/* End Style About Us Page */
 /*general classes*/
 .bg_pink {
     background-color: #ff656b;
@@ -366,6 +386,22 @@ footer .footer_col ,.copyright ,.bg-dark-blue{
 
 /* item page style */
 
+.overlay{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    height: 10%;
+    z-index: 3;
+
+}
+.style-btn-link i {
+    font-size: 30px;
+    padding-left: 15px;
+}
+.style-btn-link:hover{
+    text-decoration: none;
+}
 .card .card-body  .card-title{
     color:#012D5C;
 }
@@ -380,7 +416,30 @@ footer .footer_col ,.copyright ,.bg-dark-blue{
     position: absolute;
     right: 10px;
     bottom: 10px;
-    background-color: #012D5C;
-    border-color: #012D5C;
-    color:#fff;
+    background-color: #edf1f6;
+    border-color: #e5ebf2;
+    color:#012D5C;
 }
+.card .card-body .card-price-item{
+    font-size: 20px;
+    color: #817e7e;
+}
+@media(min-width:320px) and (max-width:768px){
+    #navbarSupportedContent{
+        margin-bottom:20px
+    }
+    #desplay_item_cont_1,
+    #desplay_item_cont_2{
+        width:100%;
+    }
+
+}
+@media(min-width:769px){
+    #desplay_item_cont_1,
+    #desplay_item_cont_2{
+        width:80%;
+    }
+}
+
+
+

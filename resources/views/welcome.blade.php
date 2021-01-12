@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/slid4.jpg" class="d-block w-100">
+                <img src="images/slid3.jpg" class="d-block w-100">
                 <div class="carousel-caption d-none d-md-block">
                     <span>Lets volunteer</span>
                     <p>We support volunteer work and exchange of materials.</p>
@@ -51,14 +51,16 @@
 <h2 class="text-center mb-4 text_pink">Latest Item Added</h2>
       <div class="swiper-wrapper">
       @foreach($items as $item)
-        <div class="swiper-slide" style="height:450px">
-            <div class="card" style="height:450px">
+        <div class="swiper-slide" style="height:350px">
+           <div class="overlay" id="overlay">
+            <a href="{{route('display_item',$item->id)}}" class="style-btn-link"><i class="fas fa-arrow-circle-right"></i></a>
+           </div>
+            <div class="card card-overlay" id="card-overlay" style="height:350px">
                 <img src="{{asset('images/vendorImage/addItemProductImage/'.$item->image)}}" height="200px" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">{{$item->name}}</h5>
-                  <p>{{$item->description}}</p>
-                   <span class="card-price-item">{{$item->price}}$</span><br>
-                  <a href="#" class="btn btn-primary">show more</a>
+                  <h4 class="card-title"><i class="fas fa-signature mr-2"></i>{{$item->name}}</h4>
+                   <span class="card-price-item"><i class="fas fa-hand-holding-usd mr-2"></i>{{$item->price}} $</span>
+                   <br>
                 </div>
               </div>
         </div>
@@ -74,49 +76,19 @@
     <div class=" container-fluid mx-auto mt-4 bg-light-gray shadow pt-3">
         <!--lastest-->
         <div class="last_added row my-3 mx-2 bg-white border rounded-lg p-3 justify-content-center">
+        @foreach($random_item as $item)
             <div class="card mx-1 my-2 p-2 shadow ">
-                <img src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1126,w_2000,x_0,y_181/f_auto,q_auto,w_1100/v1554932288/shape/mentalfloss/12531-istock-637790866.jpg" class="card-img-top border p-1" alt="...">
+               <img src="{{asset('images/vendorImage/addItemProductImage/'.$item->image)}}" height="200px" class="card-img-top" alt="...">
                 <div class="card-body" id="last-product-1">
-                    <h5 class="card-title text_pink text-capitalize" id="last-product-name-1">product name <span class="badge badge-warning">New</span></h5>
-                    <p class="card-text text-muted" id="last-product-info-1">little info. </p>
-                    <a href="#" class="btn btn-primary bg-dark-blue stretched-link rounded-pill">Go Now</a>
+                    <h5 class="card-title text_pink text-capitalize" id="last-product-name-1">{{$item->name}}</h5>
+                    <p class="card-text text-muted" id="last-product-info-1">{{$item->price}} </p>
+                    <a href="{{route('display_item',$item->id)}}" class="btn btn-primary bg-dark-blue stretched-link rounded-pill">Go Now</a>
                 </div>
             </div>
-            <div class="card mx-1 my-2 p-2 shadow">
-                <img src="https://www.funkihomes.com/35481-large_default/eames-inspired-dsw-chair-squared-legs.jpg" class="card-img-top border p-1" alt="...">
-                <div class="card-body" id="last-product-2">
-                    <h5 class="card-title text_pink text-capitalize" id="last-product-name-2">product name <span class="badge badge-warning">New</span></h5>
-                    <p class="card-text text-muted" id="last-product-info-2">little info.</p>
-                    <a href="#" class="btn btn-primary bg-dark-blue stretched-link rounded-pill">Go Now</a>
-                </div>
+        @endforeach
+            <div class="d-block col-12 text-right mt-3"> <a href="{{route('items')}}" class="text_pink font-weight-bold text-capitalize">
+                    see more <i class="fas fa-angle-double-right"></i></a>
             </div>
-            <div class="card mx-1 my-2 p-2 shadow">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTtuedxvZb552eXxsHJOUAC0t18CrA-20Fp7Q&usqp=CAU" class="card-img-top border p-1" alt="...">
-                <div class="card-body" id="last-product-3">
-                    <h5 class="card-title text_pink text-capitalize" id="last-product-name-3">product name <span class="badge badge-warning">New</span></h5>
-                    <p class="card-text text-muted" id="last-product-info-3">little info.</p>
-                    <a href="#" class="btn btn-primary bg-dark-blue stretched-link rounded-pill">Go Now</a>
-                </div>
-            </div>
-            <div class="card mx-1 my-2 p-2 shadow">
-                <img src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1126,w_2000,x_0,y_181/f_auto,q_auto,w_1100/v1554932288/shape/mentalfloss/12531-istock-637790866.jpg" class="card-img-top border p-1" alt="...">
-
-                <div class="card-body" id="last-product-4">
-                    <h5 class="card-title text_pink text-capitalize" id="last-product-name-4">product name <span class="badge badge-warning">New</span></h5>
-                    <p class="card-text text-muted" id="last-product-info-4">little info.</p>
-                    <a href="#" class="btn btn-primary bg-dark-blue stretched-link rounded-pill">Go Now</a>
-                </div>
-            </div>
-            <div class="card mx-1 my-2 p-2 shadow">
-                <img src="https://assetscdn1.paytm.com/images/catalog/product/F/FO/FOOCASTOES-BLACA-J-114927393A2EB8A/1581336357230_0..jpg" class="card-img-top border p-1" alt="...">
-                <div class="card-body" id="last-product-5">
-                    <h5 class="card-title text_pink text-capitalize" id="last-product-name-5">product name <span class="badge badge-warning">New</span></h5>
-                    <p class="card-text text-muted" id="last-product-info-5">little info.</p>
-                    <a href="#" class="btn btn-primary bg-dark-blue stretched-link rounded-pill">Go Now</a>
-                </div>
-            </div>
-            <div class="d-block col-12 text-right mt-3"> <a href="#" class="text_pink font-weight-bold text-capitalize">
-                    see more <i class="fas fa-angle-double-right"></i></a></div>
         </div>
 
         <!--categorize-->

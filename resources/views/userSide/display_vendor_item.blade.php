@@ -2,33 +2,28 @@
 
 @section('content')
 
-    <h1 class="text-center mb-4 manage_items_heading mt-2">Items</h1>
+    <h1 class="text-center mb-4 manage_items_heading mt-2">Items </h1>
+
     <div class="container">
-        <p class="row">
-            @if($items->count() == 0)
+         @if($items->count() == 0)
             <p class="alert-no-item-added mt-4 mb-5">no items added</p>
-
-            @else
-            <table class="table table-dark text-center">
-                <thead>
-                <tr>
-                    <th scope="col">image</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Price</th>
-                </tr>
-                </thead>
-                <tbody>
-                @foreach($items as $item)
-                    <tr class="row_data_vendor_and_item">
-                        <td style="width: 200px;"><img src="{{asset('images/vendorImage/addItemProductImage/'.$item->image)}}" width="150px"/></td>
-                        <td>{{$item->name}}</td>
-                        <td>{{$item->price}}</td>
-                    </tr>
-                @endforeach
-                </tbody>
-            </table>
-
-                @endif
-        </div>
+         @endif
+          <div class="row">
+         @foreach($items as $item)
+          <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 mt-5 ">
+             <div class="card">
+               <img height="250px" src="{{asset('images/vendorImage/addItemProductImage/'.$item->image)}}" class="card-img-top" alt="...">
+               <div class="card-body">
+                    <p style="color:#012D5C;"><i class="fas fa-signature mr-2"></i>{{$item->name}}</p>
+                    <p style="color:#a0a6af;"><i class="fas fa-hand-holding-usd mr-2"></i>{{$item->price}}</p>
+               </div>
+             </div>
+          </div>
+       @endforeach
+       </div>
     </div>
+
 @endsection
+
+
+

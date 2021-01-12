@@ -3,12 +3,12 @@
 @section('content')
 
     <!--section stat-->
-    <section class="manage_admain text-center">
+    <section class="manage_admain text-center table-responsive">
         <div class="data">
             <div class="container">
                 <h1 class="mb-2">All Admain</h1>
                 <div class="row">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-responsive-design ml-5 mr-5">
                         <thead>
                         <tr>
                             <th scope="col">Name</th>
@@ -29,7 +29,7 @@
                         </tbody>
                     </table>
 
-                    <a href="{{route('add_admain')}}" class="btn btn-darkblue mt-3 ">Add Admain</a>
+                    <a href="{{route('add_admain')}}" class="btn btn-darkblue m-5 ">Add Admain</a>
                 </div>
                <div class="pag"> {!! $admains->links() !!}</div>
             </div>

@@ -20,17 +20,127 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="921f4b23-3990-4be8-abe2-969f09a13595" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/slider3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/userSideImage/about as img/abdallah.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/userSideImage/about as img/raghad.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VendorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VendorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/addItemRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/addItemRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/auth.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/auth.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/createProfileRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/createProfileRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_23_112237_create_items_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_23_112237_create_items_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/admain.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/admain.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admainSideImage/admainPhoto/1608313039.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admainSideImage/admainPhoto/1608313226.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admainSideImage/admainPhoto/1608313550.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admainSideImage/admainPhoto/1608313878.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admainSideImage/admainPhoto/1608314561.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admainSideImage/admainPhoto/1608314597.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admainSideImage/admainPhoto/1608314655.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admainSideImage/admainPhoto/1608314809.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admainSideImage/admainPhoto/1608315122.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admainSideImage/admainPhoto/1608319086.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admainSideImage/admainPhoto/1609873250.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admainSideImage/admainPhoto/1609875649.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admainSideImage/admainPhoto/1609876018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admainSideImage/admainPhoto/1610212962.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admainSideImage/admainPhoto/1610214556.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/admainSideImage/admainPhoto/1610217878.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/userSideImage/about as img/image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/userSideImage/about as img/about_as.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/userSideImage/about as img/s4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/userSideImage/about as img/give_and_take.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/userSideImage/home page img/logo11.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/userSideImage/home page img/logo12.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/userSideImage/home page img/logo13.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/userSideImage/home page img/slick1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/userSideImage/home page img/slick2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/userSideImage/home page img/slick3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/userSideImage/home page img/slick5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/userSideImage/home page img/slick6.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/userSideImage/home page img/slick7.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605308663.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605308733.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605308791.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605358403.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605360377.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605361321.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605370403.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605373780.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605373817.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605373943.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605374137.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605374433.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605374454.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605375016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605375133.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605375163.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605375211.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605375301.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605375383.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605378043.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605435833.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605436903.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1605436948.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1608200983.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1608201242.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1608201335.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1608201510.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1609267566.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1609755900.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1609874411.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1609878197.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1609878624.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1609878848.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1609879008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1609879062.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1609879071.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1609879137.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1609879236.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1609879315.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1609879368.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1610217277.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1610217434.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1610217458.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1610217498.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/addItemProductImage/1610217790.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/slick1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/slick2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/slick3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/slick5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/slick6.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/slick7.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/sta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/sta1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/homeVendorImage/sta3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/profileUserImage/1605188249.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/profileUserImage/1605299411.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/profileUserImage/1605302403.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/profileUserImage/1605302531.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/profileUserImage/1605310959.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/profileUserImage/1605435599.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/profileUserImage/1605645634.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/profileUserImage/1605646878.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/profileUserImage/1605646946.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/profileUserImage/1608200778.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/profileUserImage/1608309105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/profileUserImage/1608320092.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/profileUserImage/1609874308.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/profileUserImage/1609876790.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/vendorImage/profileUserImage/1610217122.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/manage_admain.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/manage_admain.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/manage_item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/manage_item.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/show_item_vendor.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/show_item_vendor.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/userSide/Item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/userSide/Item.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/userSide/aboutAs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/userSide/aboutAs.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/userSide/display_item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/userSide/display_item.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendors/addition.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendors/addition.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendors/edit_item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendors/edit_item.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/userSide/display_vendor.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/userSide/display_vendor.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/userSide/display_vendor_item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/userSide/display_vendor_item.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +277,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../schoolManagementSystem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -180,10 +290,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Xammp\htdocs\kedmaty\public\images" />
+      <recent name="D:\Xammp\htdocs\kedmaty\public\images\userSideImage\about as img" />
       <recent name="D:\Xammp\htdocs\kedmaty\public\css\images\admainSideImage" />
       <recent name="D:\Xammp\htdocs\kedmaty\public\images\admainSideImage" />
       <recent name="D:\Xammp\htdocs\kedmaty\public\images\admainSideImage\dashbordImage" />
-      <recent name="D:\Xammp\htdocs\kedmaty\public\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Xammp\htdocs\kedmaty\public\images\userSideImage\home page img" />
@@ -364,7 +474,10 @@
       <workItem from="1609848001913" duration="9900000" />
       <workItem from="1609869786983" duration="9988000" />
       <workItem from="1610103389371" duration="649000" />
-      <workItem from="1610207707409" duration="11640000" />
+      <workItem from="1610207707409" duration="14756000" />
+      <workItem from="1610294661841" duration="12306000" />
+      <workItem from="1610356622228" duration="23641000" />
+      <workItem from="1610443598608" duration="8461000" />
     </task>
     <servers />
   </component>

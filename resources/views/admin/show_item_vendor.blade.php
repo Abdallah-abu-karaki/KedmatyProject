@@ -2,13 +2,15 @@
 
 @section('content')
 
-    <h1 class="text-center mb-4 manage_items_heading">Items</h1>
+
     <div class="container">
         <p class="row">
             @if($items->count() == 0)
+            <h1 class="text-center mb-4 manage_items_heading">Items</h1>
             <p class="alert-no-item-added">no items added</p>
 
             @else
+            <h1 class="text-center mb-4 manage_items_heading">Items {{$user->name}}</h1>
             <table class="table table-dark text-center">
                 <thead>
                 <tr>

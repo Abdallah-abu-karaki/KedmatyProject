@@ -28,6 +28,7 @@ class createProfileRequest extends FormRequest
             'location'=>'required',
             'number'=>'required|digits:10',
             'image'=>'required',
+
         ];
     }
 

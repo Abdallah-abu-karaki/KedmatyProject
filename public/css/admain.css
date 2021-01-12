@@ -48,9 +48,7 @@
     padding-bottom:40px;
     background-color:rgba(0,45,91,0.3);
     color:#fff;
-    min-height: 515px;
-
-
+    min-height: 620px;
 }
 .manage_admain .data .table thead th{
     background-color:rgb(0,45,91) ;
@@ -143,7 +141,14 @@
 .row_data_vendor_and_item td:last-child{
     border-bottom: 1px solid #001f3f;
 }
-
+@media(max-width:767px){
+    .table-responsive-design {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
 
 .show-item{
     display:flex;

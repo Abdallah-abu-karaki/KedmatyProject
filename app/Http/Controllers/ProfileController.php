@@ -38,11 +38,12 @@ class ProfileController extends Controller
 
         Profile::create([
             'image'=>$file_name,
-           'description' =>$request->description,
+            'description' =>$request->description,
             'location'=>$request->location,
             'number'=>$request->number,
+            'complete_profile'=> 1,
             'user_id'=>Auth::id(),
-            'complete_profile'=>1,
+
         ]);
 
        return redirect()->route('home');

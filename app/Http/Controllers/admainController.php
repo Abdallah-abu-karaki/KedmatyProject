@@ -66,12 +66,14 @@ class admainController extends Controller
    public function delete_admain($id){
 
        $admain = User::find($id);
-       $delete_admain = $admain->delete();
+       $number_admain  = User::where('status',1)->get()->count();
 
-       if( $delete_admain ){
-        Alert::success('Delete Admain Successfully');
-       }
-
+        if($number_admain > 1){
+          $delete_admain = $admain->delete();
+           Alert::success('Delete Admain Successfully');
+        }else{
+          Alert::warning("cann't delete latest admain");
+        }
        return redirect()->route('manage_admain');
    }
    /*_________________________________________________________________________________*/
@@ -120,7 +122,10 @@ class admainController extends Controller
 
     public function delete_vendor($id){
         $vendor = User::find($id);
+
         $vendor->delete();
+
+
         toast('Delete vendor successfully :) ','success');
         return redirect()->route('manage_vendor');
     }
@@ -132,16 +137,24 @@ class admainController extends Controller
 
     /**************************start manage item controller **************************/
     public function manage_item(){
-        $items = User::with(['profile'])->where('status',0)->get();
+       /* $items = User::with(['profile'=>function($e){
+
+        $e->where('complete_profile',1);
+
+        }])->where('status',0)->get();*/
+
+        $items = Profile::with(['user'])->where('complete_profile',1)->get();
+
+
 
         return view('admin.manage_item',compact('items'));
     }
 
     public function show_item_vendor($id){
-
+        $user = User::find($id);
         $items = Item::where('user_id',$id)->paginate(3);
 
-        return view('admin.show_item_vendor',compact('items'));
+        return view('admin.show_item_vendor',compact(['items','user']));
     }
 
     public function delete_item($id){
