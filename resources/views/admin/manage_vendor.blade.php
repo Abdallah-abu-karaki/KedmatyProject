@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1 class="text-center mb-2 manage_vendor_heading">Manage vendor</h1>
+    <h1 class="text-center mb-2 manage_vendor_heading">Manage vendors</h1>
     <div class="container">
         <div class="row">
 @foreach($vendors as $v)

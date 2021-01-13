@@ -76,7 +76,7 @@ class HomeController extends Controller
 
     public function home_user(){
         $items = Item::orderBy('id', 'desc')->take(10)->get();
-        $random_item = Item::all()->random(3);
+        $random_item = Item::all()->random(5);
         return view('welcome',compact(['items','random_item']));
     }
 

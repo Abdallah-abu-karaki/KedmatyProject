@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1 class="text-center mb-4 manage_items_heading">Manage item</h1>
+    <h1 class="text-center mb-4 manage_items_heading">Manage items</h1>
     <div class="container">
         <div class="row">
     <div class="col-lg-12">

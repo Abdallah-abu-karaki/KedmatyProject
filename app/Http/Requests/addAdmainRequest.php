@@ -30,10 +30,11 @@ class addAdmainRequest extends FormRequest
             'image'=>'required',
 
         ];
-        }
-       public function messages(){
+    }
 
-            return[
+    public function messages(){
+
+        return[
 
                 'name.required' => 'Name is required',
                 'name.unique'=>'This name already exists',

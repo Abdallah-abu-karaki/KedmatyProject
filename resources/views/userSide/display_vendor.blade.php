@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1 class="text-center mb-2 manage_vendor_heading">Manage vendor</h1>
+    <h1 class="text-center mb-2 manage_vendor_heading">Vendors</h1>
     <div class="container" style="margin-bottom:100px">
         <div class="row">
     @if($vendors->count() > 0)
