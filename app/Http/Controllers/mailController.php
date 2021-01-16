@@ -19,7 +19,7 @@ class mailController extends Controller
 
     );
 
-     Mail::to('abdallahabukaraki10@gmail.com')->send(new sendMail($data));
+     Mail::to('khedmationline@gmail.com')->send(new sendMail($data));
      toast('send email successfully','success');
      return back();
    }

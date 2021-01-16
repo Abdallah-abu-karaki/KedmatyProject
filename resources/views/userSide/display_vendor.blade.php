@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title','Vendors')
 @section('content')
 
     <h1 class="text-center mb-2 manage_vendor_heading">Vendors</h1>

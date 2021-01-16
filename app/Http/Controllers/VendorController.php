@@ -60,18 +60,15 @@ public function add_Item(addItemRequest $request){
        public function update_Item(Request $request ,$id){
 
             $Item = Item::find($id);
-            $file_extension = $request->image->getClientOriginalExtension();
+            /*$file_extension = $request->image->getClientOriginalExtension();
             $file_name = time().'.'.$file_extension;
             $path = "images/vendorImage/addItemProductImage";
-            $request->image->move($path,$file_name);
+            $request->image->move($path,$file_name);*/
             $doneUpdate = $Item->update([
                         'description'=> $request->description,
                         'name' => $request->name,
                         'price' =>$request->price ,
                         'count'=>$request->count,
-                        'image' =>$file_name,
-                        'like'=>1,
-                        'dislike'=>2,
                         'user_id'=>Auth::id(),
             ]);
 

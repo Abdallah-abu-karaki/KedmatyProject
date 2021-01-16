@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title','Vendor Items')
 @section('content')
 
     <h1 class="text-center mb-4 manage_items_heading mt-2">Items {{$user->name}}</h1>

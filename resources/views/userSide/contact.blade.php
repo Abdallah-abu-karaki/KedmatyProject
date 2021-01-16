@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title' , 'Contact')
 @section('content')
 
     <section class="formcontact mb-5">
@@ -16,7 +17,7 @@
                         @csrf
                         <div class="row">
                             <div class="col-lg-12 form-group">
-                                <input type="text" class="form-control-bg" name="name" id="c-name" placeholder="Your Name">
+                                <input type="text" class="form-control-bg" name="name" id="c-name" autocomplete="off" placeholder="Your Name">
                             </div>
                         </div>
 
@@ -27,7 +28,7 @@
 
                         <div class="row">
                             <div class="col-lg-12 form-group">
-                                <input type="email" class="form-control-bg" name="email" id="c-email" placeholder="Your Email">
+                                <input type="email" class="form-control-bg" name="email" id="c-email" autocomplete="off" placeholder="Your Email">
                             </div>
                         </div>
 
@@ -37,7 +38,7 @@
 
                         <div class="row">
                             <div class="col-lg-12 form-group">
-                                <input type="tel"  class="form-control-bg" name="phone" id="c-phone" placeholder="Your Phone">
+                                <input type="tel"  class="form-control-bg" name="phone" id="c-phone" autocomplete="off" placeholder="Your Phone">
                             </div>
                         </div>
 
@@ -47,7 +48,7 @@
 
                         <div class="row">
                             <div class="col-lg-12 form-group">
-                                <textarea id="c.message" class="form-control-bg" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                                <textarea id="c.message" class="form-control-bg" name="message" autocomplete="off" placeholder="Write something.." style="height:200px"></textarea>
                             </div>
                         </div>
 

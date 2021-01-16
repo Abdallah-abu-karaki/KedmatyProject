@@ -42,18 +42,16 @@
                     <img style="height: 254px;" src="{{asset('images/vendorImage/addItemProductImage/'.$i->image)}}" class="card-img-top" alt="#" />
                     <div class="card-body">
                         <h5 class="card-title pr-name">{{$i->name}}</h5>
-                        <span class="fa fa-star checked"></span>
+                      <!--  <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star n-cheched"></span>
-                        <span class="fa fa-star n-cheched"></span>
+                        <span class="fa fa-star n-cheched"></span>-->
 
 
                                 <p class="card-text car-text">
                                     {{$i->description}}
                                 </p>
-
-
                         <span class="card-price">{{$i->price}} jd</span>
                         <br />
                         <button type="button" class="card-btn-update"><a href="{{route('edit_item',$i->id)}}">Update</a></button>

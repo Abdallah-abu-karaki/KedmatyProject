@@ -39,14 +39,7 @@
                     @error('count')
                     <div class="alert alert-danger">{{$message}}</div>
                     @enderror
-                    <div class="form-group">
-                        <label> Image Product : </label>
-                        <input type="file" name="image" value="{{$item_info->image}}"  class="form-control border-input @error('image') is-invalid @enderror"/>
-                    </div>
-                    @error('image')
-                    <div class="alert alert-danger">{{$message}}</div>
-                    @enderror
-
+                    
                     <input type="submit" value="Update Product" class="btn btn-danger mt-3 mb-1 mb-5"/>
                 </form>
             </div>

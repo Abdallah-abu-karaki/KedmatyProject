@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title','Display Item')
 @section('content')
 
 <div class="container">
@@ -14,13 +15,13 @@
            <div  id="" class="lead font-weight-normal text-dark-blue mb-1">
              <span class="font-weight-bolder">{{$item->price}} JD</span>
            </div>
-             <ul class=" list-inline mb-0 mt-2">
+             <!--<ul class=" list-inline mb-0 mt-2">
                <li class="list-inline-item mr-0"><i class="fa fa-star text_pink"></i></li>
                <li class="list-inline-item mr-0"><i class="fa fa-star text_pink"></i></li>
                <li class="list-inline-item mr-0"><i class="fa fa-star text_pink"></i></li>
                <li class="list-inline-item mr-0"><i class="fa fa-star text_pink"></i></li>
                <li class="list-inline-item mr-0"><i class="fa fa-star text-muted"></i></li>
-             </ul>
+             </ul>-->
            </div>
            <hr>
            Product Describtion :
@@ -40,13 +41,13 @@
         </div>
         <div class="col-lg-7 col-md-8" id="vendor-info-section" >
          <h3 class="text-capitalize text-center text-dark-blue " id="">{{$user->name}}</h3>
-                    <ul class=" list-inline mb-3 mt-2 text-center">
+                   <!-- <ul class=" list-inline mb-3 mt-2 text-center">
                         <li class="list-inline-item mr-0"><i class="fa fa-star text_pink"></i></li>
                         <li class="list-inline-item mr-0"><i class="fa fa-star text_pink"></i></li>
                         <li class="list-inline-item mr-0"><i class="fa fa-star text_pink"></i></li>
                         <li class="list-inline-item mr-0"><i class="fa fa-star text_pink"></i></li>
                         <li class="list-inline-item mr-0"><i class="fa fa-star text_pink"></i></li>
-                    </ul>
+                    </ul>-->
             <div class="row pl-4 ">
                 <div class="col-sm-3 p-2">
                   <h6 class="mb-1"><i class="far fa-envelope"></i> Email: </h6>

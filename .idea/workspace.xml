@@ -20,11 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="921f4b23-3990-4be8-abe2-969f09a13595" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/addAdmainRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/addAdmainRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VendorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VendorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/mailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/mailController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/sendMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/sendMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/dynamic_email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/dynamic_email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/userSide/Item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/userSide/Item.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/userSide/aboutAs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/userSide/aboutAs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/userSide/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/userSide/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/userSide/display_item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/userSide/display_item.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/userSide/display_vendor.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/userSide/display_vendor.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendors/edit_profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendors/edit_profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/userSide/display_vendor_item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/userSide/display_vendor_item.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendors/edit_item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendors/edit_item.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendors/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendors/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -363,7 +374,19 @@
       <workItem from="1610356622228" duration="23641000" />
       <workItem from="1610443598608" duration="22064000" />
       <workItem from="1610528594985" duration="6810000" />
-      <workItem from="1610553478384" duration="326000" />
+      <workItem from="1610553478384" duration="1070000" />
+      <workItem from="1610560786856" duration="1040000" />
+      <workItem from="1610642856323" duration="1705000" />
+      <workItem from="1610647268563" duration="4000" />
+      <workItem from="1610715573309" duration="1475000" />
+      <workItem from="1610717443848" duration="933000" />
+      <workItem from="1610730942995" duration="1245000" />
+      <workItem from="1610733085935" duration="686000" />
+      <workItem from="1610735420472" duration="906000" />
+      <workItem from="1610742688137" duration="679000" />
+      <workItem from="1610776442326" duration="1709000" />
+      <workItem from="1610778201700" duration="373000" />
+      <workItem from="1610778661601" duration="938000" />
     </task>
     <servers />
   </component>
